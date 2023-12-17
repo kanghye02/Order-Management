@@ -1,0 +1,56 @@
+{% extends 'admin/home.html'%}
+{% load i18n %}
+{% load static %}
+{%load djmoney%}
+{% money_localize money on%}
+
+{% block content %}
+<section class="food_section layout_padding-bottom">
+    <div class="container">
+      <div class="heading_container heading_center">
+         <div class="container">
+          <h2> <br> 
+            {%trans "TODAY'S ORDER STATISTICS" %} 
+           </h2>
+          <table class="table table-striped ">
+              <thead>
+                  <tr>
+                      <th scope="col">{%trans "Day" %}</th>
+                      <th scope="col">{%trans "Revenue" %}</th>
+                      <th scope="col">{%trans "Number Of Orders" %}</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  {% for item in daily_summary %}
+                      <tr>
+                          <td><p class="todaystatistics"> {{ item.order_today_new|date:"d M, Y"  }} </p></td>
+                          <td><p class="todaystatistics">{{ item.total_price }}</p></td>
+                          <td><p class="todaystatistics">{{ item.count }}</p></td>
+                      </tr>
+                  {% endfor %}
+              </tbody>
+          </table>
+      </div>        <h2> <br>
+         {%trans "STATISTICAL CHART" %} 
+        </h2>
+        <br>
+         <form class="total-text" method="GET">
+         <h3 class="total-text" >{%trans "Filter:" %} </h3> <p class="total-text">&emsp;  {%trans "Day from" %}</p> 
+          <input class="day-statistics" type="date" value={{start_date}} name="start_date">
+          <p class="total-text"> &emsp; {%trans "To" %}</p> 
+        <input class="day-statistics" type="date" value={{end_date}}  name="end_date">  &emsp;
+        <button type="submit" class="fa fa-check-square-o day-statistics" aria-hidden="true" >
+        </button> 
+        {% if  date_status == 0 %}
+          <h2>{%trans "Please make sure the start and end dates are accurate!!!" %}</h2>
+        {% endif %}
+    </form> 
+  </br>
+  </br>
+          {% if  date_status == 1 %}
+           <canvas id="myChart" width="400" height="200"></canvas>
+          {% endif %}
+        </div>
+    </div>
+</section>
+{% endblock %}

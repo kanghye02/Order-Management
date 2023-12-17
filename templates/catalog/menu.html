@@ -1,0 +1,84 @@
+{% extends 'homepage/base.html'%}
+{% load i18n %}
+{% load static %}
+{%load djmoney%}
+{% money_localize money on %}
+
+{% block content %}
+<section class="food_section layout_padding-bottom">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+         {%trans "Our Menu" %} </h2> <br>
+         <h3>
+         <form method="GET" class="d-inline">
+          {%trans "Search: " %}
+          <input class="input-search" placeholder='{% trans "Search for food here" %}' name="food_name" type="text" />
+          <button type="submit" class="fa fa-search searchbox" aria-hidden="true" >
+          </button> 
+        </form> &emsp;
+        <form method="get" class="d-inline">
+          <label class="d-inline" for="filter"  >{%trans "Filter:" %} </label>
+          <select id="filter_menu" name="filter_menu" class="input-search">
+              <option value="all">{%trans "All" %}</option>
+              <option value="by_sold_number">{%trans "By Sold Number" %}</option>
+              <option value="by_promotion">{%trans "By Promotion" %}</option>
+          </select>
+          <button type="submit" class="fa fa-search searchbox" aria-hidden="true" >
+          </button> 
+      </form>
+        </h3>
+      </div>
+      <ul class="filters_menu">
+        {% for Category in menu %}
+            <li class="active" data-filter=".{{ Category.name }}">
+                <a href="?category={{Category.name}}">  {% trans Category.name %} </a>
+            </li>
+            &emsp; 
+        {% endfor %}
+    </ul>
+    <div class="filters-content">
+      <div class="row grid">
+        {% for Product in products_array%}
+        {% if request.GET.category == Product.product.category.name or request.GET.category|length == 0  %}
+        <div class="col-sm-6 col-lg-4 all pizza">
+          <div class="box">
+            <div>
+              <div class="img-box">
+                <img src="{{Product.product.image.url}}" >
+              </div>
+              <div class="detail-box">
+                <h5  class="product-title-text"> {% trans Product.product.name%}</h5>
+                <p class="description-text"> {% trans Product.product.description %} </p>
+                <h6 class="font-weight-bold d-inline">{%trans "Sold:"%} {{Product.product.sold_number}}  &emsp;  &emsp;  &emsp;  </h6>    
+                  &emsp; &emsp; &emsp; <a href="{% url 'home:menu_product_detail' Product.product.id %}" class="product-link text-primary d-inline">{%trans "View More" %}</a>
+                <div class="options"> 
+                  {% if Product.promotion > 0 %}
+                    <h6 class="text-danger"> <del>{% money_localize Product.product.base_price 'VND' %} </del></h6>
+                    <h6> {% money_localize Product.promotion 'VND' %} </h6>
+                  {% else %}
+                    <h6> {% money_localize Product.product.base_price 'VND' %} </h6>
+                  {% endif %}
+                  {% if Product.cart_item_quantity %}
+                  <a href="{% url 'home:add_to_cart' Product.product.id %}" class="user_link bg-success">
+                    <i class="fa fa-shopping-cart	" aria-hidden="true"></i>  ({{Product.cart_item_quantity}})
+                  </a>
+                  {% else %}
+                    <a href="{% url 'home:add_to_cart' Product.product.id %}" class="user_link">
+                      <i class="fa fa-shopping-cart	" aria-hidden="true"></i>
+                    </a>
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endif %}
+        {% empty %}
+          <h2>{% trans "There are no products matching the search results!!!" %}</h2>
+        {% endfor %}
+      </div>
+    </div>
+    </div>
+</section>
+{% endblock %}>

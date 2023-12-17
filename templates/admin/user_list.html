@@ -1,0 +1,48 @@
+{% extends 'admin/home.html'%}
+{% load static %}
+{% load i18n %}
+
+{% block content %}
+<section class="slider_section ">
+    <div class="container ">
+        <div class="login-container">
+        <form method="post" action="{% url 'home:delete_users' %}">
+        {% csrf_token %}
+            <h1>{% trans "Users Manage" %}</h1>
+        <table class="tablecate">
+        <tbody>
+            {% for user in users %}
+            <tr>
+                <td class="checkbox-column" ><input type="checkbox" name="user_ids" value="{{ user.id }}"></td>
+                <td class="tdcate"><a href="{% url 'home:admin_user_detail' user.id %}">{{user.username}}</a></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+        </table>
+        {% if is_paginated %}
+        <table class="tablepagi">
+            <td class="tdpagi">
+            {% if page_obj.has_previous %}
+                <a href="{{ request.path }}?page={{ page_obj.previous_page_number}}">prev</a>
+            {% endif %}</td>
+            <td>
+                <span class="page-current white-label">Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}</span>
+            </td>
+            <td class="tdpagi">
+            {% if page_obj.has_next %}
+                <a href="{{ request.path }}?page={{ page_obj.next_page_number }}">next</a>
+            {% endif %}</td>
+        </table>
+        {% endif %}<br>
+            <div class="d-flex justify-content-center">
+                <button type="submit" class="btn btn-danger btn-block">{% trans 'Delete selected users' %}</button>
+            </div>
+        </form>
+        <p class="mb-0">--------or--------</p>
+        <form method="get" action="{% url 'home:admin_user_create' %}">
+            <button type="submit" class="btn btn-success">{% trans 'Create new user' %}</button>
+        </form>
+        </div>
+    </div>
+</section>
+{% endblock %}

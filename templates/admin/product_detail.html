@@ -1,0 +1,86 @@
+{% extends 'admin/home.html'%}
+{% load static %}
+{% load i18n %}
+
+{% block content %}
+<section class="slider_section ">
+    <div class="container ">
+        <div class="login-container">
+        <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+            <h1>{% trans "Product Detail" %}</h1>
+            {% for error in form.base_price.errors %}
+                <strong><p class="text-danger text-center">{{ error }}</p></strong>
+            {% endfor %}
+            {% for error in form.number_in_stock.errors %}
+                <strong><p class="text-danger text-center">{{ error }}</p></strong>
+            {% endfor %}
+            {% if messages %}
+            {% for message in messages %}
+              <p class="text-success text-center">{{ message }}</p>
+            {% endfor %}
+            {% endif %}
+            <table class="table">
+                {% for field in form %}
+                    {% if field.name != "csrfmiddlewaretoken" %}
+                        <tr>
+                            <td class="table-col-text-left">
+                                <label for="{{ field.id_for_label }}" class="col-form-label">
+                                    <div class="white-label">
+                                        {% trans field.label %}:
+                                    </div>
+                                </label>
+                            </td>
+                            <td>
+                                {% if field.name == "category" %}
+                                    <div class="input-group custom-select">
+                                        {{ field }}
+                                        {% if field.help_text %}
+                                            <small class="form-text text-muted mt-2">
+                                                {{ field.help_text }}
+                                            </small>
+                                        {% endif %}
+                                    </div>
+                                {% else %}
+                                <div class="input-group">
+                                    {% if form.instance.image %}
+                                    <input  type="text"
+                                            class="form-control"
+                                            name="{{ field.name }}"
+                                            id="{{ field.id_for_label }}"
+                                            value="{{ field.value }}" {% if field.label == "Image" or field.label == "hình ảnh" %}
+                                            readonly{% endif %}>
+
+                                    {% else %}
+                                        <input type="{{ field.field.widget.input_type }}"
+                                               class="form-control"
+                                               name="{{ field.name }}"
+                                               id="{{ field.id_for_label }}"
+                                               value="{{ field.value }}">
+                                    {% endif %}
+                                </div>
+                                {% endif %}
+                            </td>
+                        </tr>
+                            {% if field.name == "image" and form.instance.image %}
+                            <td></td><td>
+                            <input type="{{ field.field.widget.input_type }}"
+                                       class="form-control"
+                                       name="{{ field.name }}"
+                                       id="{{ field.id_for_label }}"
+                                       value="{{ field.value }}">
+                            </td>
+                            {% endif %}
+                    {% endif %}
+                {% endfor %}
+            </table>        
+            <button type="submit" class="btn btn-primary">{% trans "Save changes" %}</button>
+        </form>
+        <p class="mb-0">--------or--------</p>
+        <form method="get" action="{% url 'home:admin_product_list' %}">
+            <button type="submit" class="btn btn-secondary">{% trans "Return product list" %}</button>
+        </form>
+        </div>
+    </div>
+</section>
+{% endblock %}

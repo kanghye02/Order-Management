@@ -1,0 +1,54 @@
+{% extends 'admin/home.html'%}
+{% load static %}
+{% load i18n %}
+
+{% block content %}
+<section class="slider_section ">
+    <div class="container ">
+        <div class="login-container">
+        <form method="post" action="{% url 'home:delete_categories' %}">
+        {% csrf_token %}
+            <h1>{% trans "Categories Manage" %}</h1>
+        <table class="tablecate">
+            <thead>
+                <tr>
+                  <th></th>
+                  <th class="thprod">{% trans "Category Name" %}</th>
+                </tr>
+            </thead>
+        <tbody>
+            {% for category in categories %}
+            <tr>
+                <td class="checkbox-column" ><input type="checkbox" name="category_ids" value="{{ category.id }}"></td>
+                <td class="tdcate"><a href="{% url 'home:admin_category_detail' category.id %}">{% trans category.name %}</a></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+        </table>
+        {% if is_paginated %}
+        <table class="tablepagi">
+            <td class="tdpagi">
+            {% if page_obj.has_previous %}
+                <a href="{{ request.path }}?page={{ page_obj.previous_page_number}}">prev</a>
+            {% endif %}</td>
+            <td>
+                <span class="page-current white-label">Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}</span>
+            </td>
+            <td class="tdpagi">
+            {% if page_obj.has_next %}
+                <a href="{{ request.path }}?page={{ page_obj.next_page_number }}">next</a>
+            {% endif %}</td>
+        </table>
+        {% endif %}<br>
+            <div class="d-flex justify-content-center">
+                <button type="submit" class="btn btn-danger btn-block">{% trans 'Delete selected categories' %}</button>
+            </div>
+        </form>
+        <p class="mb-0">--------or--------</p>
+        <form method="get" action="{% url 'home:admin_category_create' %}">
+            <button type="submit" class="btn btn-success">{% trans 'Create new category' %}</button>
+        </form>
+        </div>
+    </div>
+</section>
+{% endblock %}

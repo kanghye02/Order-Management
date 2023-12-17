@@ -1,0 +1,165 @@
+{% load i18n %}
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="shortcut icon" href="{% static 'homepage/images/favicon.png' %}" type="">
+  <title> HyNiu Food & Drink </title>
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="{% static 'homepage/css/bootstrap.css' %}" />
+    <!-- Custom styles for this template -->
+    <link href="{% static 'homepage/css/style.css' %}" rel="stylesheet" />
+    
+{% block cssblock %}
+{% endblock %}
+
+</head>
+<body>
+  {% block navbarblock %}
+  <!-- header section strats -->
+  <div class="hero_area">
+    {% if request.resolver_match.url_name == 'category' or request.resolver_match.url_name == 'your_order'  or request.resolver_match.url_name == 'menu_product_detail' %}
+    <div class="bg-navbar">
+      <img src="{% static 'homepage/images/navbar.jpg' %}" alt="">
+    </div>
+    {% else %}
+    <div class="bg-box">
+      <img src="{% static 'homepage/images/bground.jpg' %}" alt="">
+    </div>
+    {% endif %}
+  <header class="header_section">
+      <div>
+        <nav class="navbar navbar-expand-lg custom_nav container ">
+          <a class="navbar-brand" href="{% url 'home:home' %}">
+            <span>
+              HyNiu F&D
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  mx-auto ">
+              <li class="listlink"><a href="{% url 'home:home' %}"> {% trans "HOME" %}</a> </li>
+              <li class="listlink"><a href="{% url 'home:category' %}">&emsp; &emsp; &emsp;  &emsp; {% trans "MENU" %}</a></li>
+              <li class="listlink"><a href="">&emsp; &emsp; &emsp;  &emsp; {% trans "ABOUT" %}</a></li>
+            </ul>
+            {% get_current_language as LANGUAGE_CODE %}
+            {% get_available_languages as LANGUAGES %}
+            {% get_language_info_list for LANGUAGES as languages %}
+            {% if request.resolver_match.url_name == 'home' or request.resolver_match.url_name == 'index' %}
+            <a class="listlink" href="{% url 'vi:home' %}">  &emsp;
+              <img src="/static/homepage/images/vi.png" class="imagesflag">
+              <a  href="{% url 'vi:home' %}" class="trans-button"> VI </a> 
+            <a class="listlink" href="{% url 'en:home' %}">   &emsp;
+              <img src="/static/homepage/images/en.png" class="imagesflag">
+              <a  href="{% url 'en:home' %}" class="trans-button"> EN &emsp; </a> 
+            {% elif request.resolver_match.url_name == 'login' %}
+            <a class="listlink" href="{% url 'vi:login' %}">  &emsp;
+              <img src="/static/homepage/images/vi.png" class="imagesflag">
+              <a  href="{% url 'vi:login' %}" class="trans-button"> VI </a> 
+            <a class="listlink" href="{% url 'en:login' %}">   &emsp;
+              <img src="/static/homepage/images/en.png" class="imagesflag">
+              <a  href="{% url 'en:login' %}" class="trans-button"> EN &emsp; </a>
+            {% elif request.resolver_match.url_name == 'category' %}
+            <a class="listlink" href="{% url 'vi:category' %}">  &emsp;
+              <img src="/static/homepage/images/vi.png" class="imagesflag">
+              <a  href="{% url 'vi:category' %}" class="trans-button"> VI </a> 
+            <a class="listlink" href="{% url 'en:category' %}">   &emsp;
+              <img src="/static/homepage/images/en.png" class="imagesflag">
+              <a  href="{% url 'en:category' %}" class="trans-button"> EN &emsp; </a>
+            {% elif request.resolver_match.url_name == 'profile' %}
+            <a class="listlink" href="{% url 'vi:profile' %}">  &emsp;
+              <img src="/static/homepage/images/vi.png" class="imagesflag">
+              <a  href="{% url 'vi:profile' %}" class="trans-button"> VI </a> 
+            <a class="listlink" href="{% url 'en:profile' %}">   &emsp;
+              <img src="/static/homepage/images/en.png" class="imagesflag">
+              <a  href="{% url 'en:profile' %}" class="trans-button"> EN &emsp; </a>
+            {% elif request.resolver_match.url_name == 'register' %}
+            <a class="listlink" href="{% url 'vi:register' %}">  &emsp;
+              <img src="/static/homepage/images/vi.png" class="imagesflag">
+              <a  href="{% url 'vi:register' %}" class="trans-button"> VI </a> 
+            <a class="listlink" href="{% url 'en:register' %}">   &emsp;
+              <img src="/static/homepage/images/en.png" class="imagesflag">
+              <a  href="{% url 'en:register' %}" class="trans-button"> EN &emsp; </a>
+            {% elif request.resolver_match.url_name == 'cart' %}
+            <a class="listlink" href="{% url 'vi:cart' %}">  &emsp;
+              <img src="/static/homepage/images/vi.png" class="imagesflag">
+              <a  href="{% url 'vi:cart' %}" class="trans-button"> VI </a> 
+            <a class="listlink" href="{% url 'en:cart' %}">   &emsp;
+              <img src="/static/homepage/images/en.png" class="imagesflag">
+              <a  href="{% url 'en:cart' %}" class="trans-button"> EN &emsp; </a>  
+            {% elif request.resolver_match.url_name == 'order' %}
+            <a class="listlink" href="{% url 'vi:order' %}">  &emsp;
+              <img src="/static/homepage/images/vi.png" class="imagesflag">
+              <a  href="{% url 'vi:order' %}" class="trans-button"> VI </a> 
+            <a class="listlink" href="{% url 'en:order' %}">   &emsp;
+              <img src="/static/homepage/images/en.png" class="imagesflag">
+              <a  href="{% url 'en:order' %}" class="trans-button"> EN &emsp; </a>    
+            {% elif request.resolver_match.url_name == 'your_order' %}
+            <a class="listlink" href="{% url 'vi:your_order' %}">  &emsp;
+              <img src="/static/homepage/images/vi.png" class="imagesflag">
+              <a  href="{% url 'vi:your_order' %}" class="trans-button"> VI </a> 
+            <a class="listlink" href="{% url 'en:your_order' %}">   &emsp;
+              <img src="/static/homepage/images/en.png" class="imagesflag">
+              <a  href="{% url 'en:your_order' %}" class="trans-button"> EN &emsp; </a>    
+              {% elif request.resolver_match.url_name == 'menu_product_detail' %}
+              <a class="listlink" href="{% url 'vi:menu_product_detail' product_id=product.id %}">  &emsp;
+                <img src="/static/homepage/images/vi.png" class="imagesflag">
+                <a  href="{% url 'vi:menu_product_detail' product_id=product.id %}" class="trans-button"> VI </a> 
+              <a class="listlink" href="{% url 'en:menu_product_detail' product_id=product.id %}">   &emsp;
+                <img src="/static/homepage/images/en.png" class="imagesflag">
+                <a  href="{% url 'en:menu_product_detail' product_id=product.id %}" class="trans-button"> EN &emsp; </a>    
+            {% endif %}
+            <div class="user_option">
+              {% if user.is_authenticated %}
+              <a href="{% url 'home:profile' %}" class="user_link">
+                {{ user.get_username }}
+                <i class="fa fa-user" aria-hidden="true"></i>
+              </a>
+              {% else %}
+              <a href="{% url 'login' %}" class="user_link">
+                {%trans "Login"%}
+                <i class="fa fa-user" aria-hidden="true"></i>
+              </a>
+              {% endif %}
+              {% if user.is_authenticated %}
+              <a href="{% url 'home:cart' %}" class="user_link">
+                <i class="fa fa-shopping-cart	" aria-hidden="true">({{total_quantity}})</i>
+              </a>
+              {% elif user.order %}
+              <a href="{% url 'home:yourorder' %}" class="user_link">
+                <i class="fa fa-shopping-cart	" aria-hidden="true"></i>
+              </a>
+              {% endif %}
+              {% if user.is_staff %}
+                <a href="{% url 'home:admin_order' %}" class="sunas"> <b>{%trans "Admin Page"%}</b></a>
+              {% else %}
+                <a href="" class="sunas"> <b> HUST</b></a>
+              {% endif %}
+            </div>
+          </div>
+        </nav>
+      </div>
+  </header>
+  <!-- end header section -->
+  {% endblock %}
+
+  {% block content %}
+  {% endblock %}
+  {% if request.resolver_match.url_name == 'your_order' %}
+  {% else %}
+  {% include 'homepage/footer.html' %}
+  {% endif %}
+</div>
+<!-- jQery -->
+<script src="{% static 'homepage/js/jquery-3.4.1.min.js' %}"></script>
+<script src="{% static 'homepage/js/chart.js' %}"></script>
+<script src="{% static 'homepage/js/total.js' %}"></script>
+<script src="{% static 'homepage/js/order_list.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+{% extends 'homepage/base.html'%}
+{% load static %}
+{% load i18n %}
+
+{% block content %}
+    <!-- Header section -->
+    <!-- slider section -->
+    <section class="slider_section ">
+      <div class="container">
+        <div class="login-container">
+            <h1>{% trans "Profile" %}</h1>
+            {% if messages %}
+            {% for message in messages %}
+              <p class="text-success text-center">{{ message }}</p>
+            {% endfor %}
+            {% endif %}
+            <form method="post">
+                {% csrf_token %}
+                <table class="table">
+                    {% for field in form %}
+                    {% if field.name != "csrfmiddlewaretoken" and field.name != "next" %}
+                    <tr>
+                        <td class="table-col-text-left">
+                            <label for="{{ field.id_for_label }}" class="col-form-label">
+                              <div class="white-label">
+                                {% trans field.label %}:
+                              </div>   
+                            </label>
+                        </td>
+                        <td>
+                            <div class="input-group">
+                                <input type="{{ field.field.widget.input_type }}"
+                                       class="form-control"
+                                       name="{{ field.name }}"
+                                       id="{{ field.id_for_label }}"
+                                       value="{{ field.value }}"
+                                       {% if field.label == "Email address" or field.label == "Địa chỉ email" %}
+                                       readonly{% endif %}
+                                       required oninvalid="this.setCustomValidity('{% trans "Please Fill Out This Field" %}')">
+                                      </div>
+                        </td>
+                    </tr>
+                    {% endif %}
+                    {% endfor %}
+                </table>   
+                  <button type="submit" class="btn btn-primary">{% trans 'Save Changes' %}</button>
+            </form>
+            <p class="mb-0">--------or--------</p>
+            <div class="d-flex justify-content-center">
+              <form method="post" action="{% url 'home:custom_logout' %}">
+                {% csrf_token %}
+                <button type="submit" class="btn btn-danger btn-block">{% trans 'Logout' %}</button>
+              </form>
+            </div>            
+        </div>
+      </div>
+    </section>
+    <!-- end slider section -->
+  </div>
+{% endblock %}

@@ -1,0 +1,63 @@
+{% load i18n %}
+{% load static %}
+
+  <!-- footer section -->
+  <link href="{% static 'homepage/css/font-awesome.min.css'%}" rel="stylesheet" />
+  <footer class="footer_section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 footer-col">
+          <div class="footer_contact">
+            <h4>  {% trans " Contact Us "%} </h4>
+            <div class="contact_link_box">
+              <a>
+                <i class="fa fa-phone" aria-hidden="true"></i>   <!-- Add symbol -->
+                <span> {%trans "Call Huy: +84 343036100"%} </span>
+              </a>
+              <a>
+                <i class="fa fa-envelope" aria-hidden="true"></i>  <!-- Add symbol -->
+                <span>leekanghye2002@gmail.com </span>
+              </a>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 footer-col">
+          <div class="footer_detail">
+            <a href="" class="footer-logo"> HyNiu </a>
+            <p> {% trans " The most important thing is always the customer's taste and the reliability of the food "%} </p>
+            <p>{% trans " We are honored to serve you "%}</p>
+            <div class="footer_social">
+              <a href="">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-youtube" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-github" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 footer-col">
+          <h4>
+            {% trans " Opening Hours "%}
+          </h4>
+          <p>
+            {% trans " Everyday "%}
+          </p>
+          <p>
+            8.00 Am -10.00 Pm
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer section -->

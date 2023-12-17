@@ -1,0 +1,61 @@
+{% extends 'admin/home.html'%}
+{% load static %}
+{% load i18n %}
+
+{% block content %}
+<section class="slider_section ">
+    <div class="container ">
+        <div class="login-container">
+        <form method="post">
+        {% csrf_token %}
+            <h1>{% trans "Category Detail" %}</h1>
+            {% if messages %}
+            {% for message in messages %}
+              <p class="text-success text-center">{{ message }}</p>
+            {% endfor %}
+            {% endif %}
+            <table class="table">
+                {% for field in form %}
+                    {% if field.name != "csrfmiddlewaretoken" %}
+                        <tr>
+                            <td class="table-col-text-left">
+                                <label for="{{ field.id_for_label }}" class="col-form-label">
+                                    <div class="white-label">
+                                        {% trans field.label %}:
+                                    </div>
+                                </label>
+                            </td>
+                            <td>
+                                {% if field.name == "parent" %}
+                                    <div class="input-group custom-select">
+                                        {{ field }}
+                                        {% if field.help_text %}
+                                            <small class="form-text text-muted mt-2">
+                                                {{ field.help_text }}
+                                            </small>
+                                        {% endif %}
+                                    </div>
+                                {% else %}
+                                    <div class="input-group">
+                                        <input type="{{ field.field.widget.input_type }}"
+                                               class="form-control"
+                                               name="{{ field.name }}"
+                                               id="{{ field.id_for_label }}"
+                                               value="{{ field.value }}">
+                                    </div>
+                                {% endif %}
+                            </td>
+                        </tr>
+                    {% endif %}
+                {% endfor %}
+            </table>        
+            <br><br><button type="submit" class="btn btn-primary">{% trans "Save changes" %}</button>
+        </form>
+        <p class="mb-0">--------or--------</p>
+        <form method="get" action="{% url 'home:admin_category_list' %}">
+            <button type="submit" class="btn btn-secondary">{% trans "Return category list" %}</button>
+        </form>
+        </div>
+    </div>
+</section>
+{% endblock %}

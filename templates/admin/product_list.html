@@ -1,0 +1,118 @@
+{% extends 'admin/home.html'%}
+{% load static %}
+{% load i18n %}
+{%load djmoney%}
+{% money_localize money on}
+
+{% block content %}
+<section class="slider_section ">
+    <div class="container ">
+        <div class="cart-container">
+        <form name="delete" id="delete" method="post" action="{% url 'home:delete_products' %}">
+        {% csrf_token %}
+            <h1>{% trans "Products Manage" %}</h1>
+        <table class="tablecate">
+            <thead>
+                <tr>
+                  <th></th>
+                  <th class="thprod">{% trans "Name" %}</th>
+                  <th>{% trans "Category" %}</th>
+                  <th>{% trans "Stock" %}</th>
+                  <th>&emsp;{% trans "Sold" %}</th>
+                  <th>{% trans "Price" %}</th>
+                  <th>{% trans "Promo" %} &emsp;</th>
+                  <th>{% trans "Action" %}</th>
+                </tr>
+            </thead>
+        <tbody>
+            {% for product in products %}
+            <tr>
+                <td class="checkbox-column" ><input type="checkbox" name="product_ids" value="{{ product.product.id }}"></td>
+                <td class="tdprod"><a href="{% url 'home:admin_product_detail' product.product.id %}">{% trans product.product.name %}</a></td>
+                <td class="tdprod2">{{ product.product.category.name }}</td>
+                <td>{{ product.product.number_in_stock }}</td>
+                <td>{{ product.product.sold_number }}</td>
+                <td>{% money_localize product.product.base_price 'VND' %}</td>
+                {% if product.promotion > 0 %}
+                <td>{{product.dis_percent}}%</td>
+                <td> <a class="text-danger" href="{% url 'home:delete_promotion' product.promotion_id %}">{% trans "Delete Promotion" %}</a></td>
+                {% else %}
+                <td>0%</td>
+                <td>
+                    <button type="button" onclick="$('#product-id').val('{{product.product.id}}')" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                        {% trans "Set" %}
+                    </button>
+                </td>
+            {% endif %}
+            </tr>
+            {% endfor %}
+        </tbody>
+        </table>
+        {% if is_paginated %}
+        <table class="tablepagi">
+            <td class="tdpagi">
+            {% if page_obj.has_previous %}
+                <a href="{{ request.path }}?page={{ page_obj.previous_page_number}}">prev</a>
+            {% endif %}</td>
+            <td>
+                <span class="page-current white-label">{% trans "Page" %} {{ page_obj.number }} {% trans "of" %} {{ page_obj.paginator.num_pages }}</span>
+            </td>
+            <td class="tdpagi">
+            {% if page_obj.has_next %}
+                <a href="{{ request.path }}?page={{ page_obj.next_page_number }}">{% trans "next" %}</a>
+            {% endif %}</td>
+        </table>
+        {% endif %}<br>
+            <div class="d-flex justify-content-center">
+                <button type="submit" class="btn btn-danger btn-block">{% trans 'Delete selected products' %}</button>
+            </div>
+        </form>
+        <p class="mb-0">{% trans "--------or--------" %}</p>
+        <form method="get" action="{% url 'home:admin_product_create' %}">
+            <button type="submit" class="btn btn-success">{% trans 'Create new product' %}</button>
+        </form>
+        </div>
+    </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">{% trans "Set Promotion" %}</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+            <form name="promotion" id="promotion" class="total-text" action="{% url 'home:update_promotion' %}" method="POST">
+                {% csrf_token %}
+        <div class="modal-body">
+                <input  type="hidden" class="form-control" id="product-id" name="product_id"  >
+                <div class="form-group">
+                <label for="dis_percent">{% trans "Discount Percent" %}</label>
+                <input type="number" min="0" max="100" class="form-control" id="dis_percent" name="dis_percent"  placeholder="XX%"  required>
+                </div>
+                <div class="form-group">
+                <label for="description">{% trans "Description" %}</label>
+                <input required type="text" class="form-control" id="description" name="description" placeholder="Description Here">
+                </div>
+                <div class="form-group">
+                <label for="start_promo">{% trans "Start Date" %}</label>
+                <input required type="datetime-local" class="form-control" id="start_promo" name="start_promo" >
+                </div>
+                <div class="form-group">
+                <label for="end_promo">{% trans "End Date" %}</label>
+                <input required type="datetime-local" class="form-control" id="end_promo" name="end_promo" >
+                </div>
+            </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">{% trans "Close" %}</button>
+          <button type="submit" class="btn btn-primary">{% trans "Save changes" %}</button>
+        </div>
+              </form>   
+      </div>
+    </div>
+  </div>
+
+</section>
+{% endblock %}
