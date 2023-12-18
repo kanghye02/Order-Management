@@ -1,0 +1,701 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-17 23:24+0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\home\forms.py:44
+msgid "The number in stock must be a positive integer."
+msgstr ""
+
+#: .\home\forms.py:50
+msgid "The base price must be a positive integer."
+msgstr ""
+
+#: .\home\models.py:18
+msgid "Parent category of this category (if any)."
+msgstr ""
+
+#: .\home\models.py:25
+msgid "Product image"
+msgstr ""
+
+#: .\home\models.py:26
+msgid "Brief description of the product."
+msgstr ""
+
+#: .\home\models.py:27
+msgid "The origin price of the product."
+msgstr ""
+
+#: .\home\models.py:28
+msgid "Quantity of the product available in stock."
+msgstr ""
+
+#: .\home\models.py:29
+msgid "Number of products sold."
+msgstr ""
+
+#: .\home\models.py:48
+msgid "Date of the order."
+msgstr ""
+
+#: .\home\models.py:56
+msgid "Status of the order."
+msgstr ""
+
+#: .\home\models.py:59 .\home\models.py:66
+msgid "total cost of order."
+msgstr ""
+
+#: .\home\models.py:62
+msgid "Price of product at order."
+msgstr ""
+
+#: .\home\models.py:63
+msgid "total quantity of products ordered."
+msgstr ""
+
+#: .\home\models.py:72
+msgid "Quantity of each product in the cart."
+msgstr ""
+
+#: .\home\models.py:78
+msgid "The number of sales of the best-selling product."
+msgstr ""
+
+#: .\home\models.py:81
+msgid "Best Seller"
+msgstr ""
+
+#: .\home\models.py:82
+msgid "Best Sellers"
+msgstr ""
+
+#: .\home\models.py:86
+msgid "Brief description of the promotion."
+msgstr ""
+
+#: .\home\views.py:76 .\home\views.py:221 .\home\views.py:288
+#: .\home\views.py:440
+msgid "Changes saved"
+msgstr ""
+
+#: .\home\views.py:489 .\home\views.py:499 .\home\views.py:512
+msgid "Đơn đặt hàng không tồn tại"
+msgstr ""
+
+#: .\home\views.py:509
+msgid "Không thể xóa đơn đặt hàng với trạng thái này"
+msgstr ""
+
+#: .\shop\settings.py:121
+msgid "VI"
+msgstr ""
+
+#: .\shop\settings.py:122
+msgid "EN"
+msgstr ""
+
+#: .\templates\admin\category_detail.html:11
+msgid "Category Detail"
+msgstr ""
+
+#: .\templates\admin\category_detail.html:52
+#: .\templates\admin\product_detail.html:77
+#: .\templates\admin\product_list.html:110
+#: .\templates\admin\user_detail.html:52
+msgid "Save changes"
+msgstr ""
+
+#: .\templates\admin\category_detail.html:56
+#: .\templates\admin\category_form.html:51
+msgid "Return category list"
+msgstr ""
+
+#: .\templates\admin\category_form.html:11
+msgid "Create New Category"
+msgstr ""
+
+#: .\templates\admin\category_form.html:47
+msgid "Create category"
+msgstr ""
+
+#: .\templates\admin\category_list.html:11
+msgid "Categories Manage"
+msgstr ""
+
+#: .\templates\admin\category_list.html:16
+msgid "Category Name"
+msgstr ""
+
+#: .\templates\admin\category_list.html:44
+msgid "Delete selected categories"
+msgstr ""
+
+#: .\templates\admin\category_list.html:49
+msgid "Create new category"
+msgstr ""
+
+#: .\templates\admin\home.html:48
+msgid "ORDER"
+msgstr ""
+
+#: .\templates\admin\home.html:49
+msgid "CATEGORY"
+msgstr ""
+
+#: .\templates\admin\home.html:50
+msgid "PRODUCT"
+msgstr ""
+
+#: .\templates\admin\home.html:51
+msgid "USER"
+msgstr ""
+
+#: .\templates\admin\home.html:52
+msgid "STATISTICS"
+msgstr ""
+
+#: .\templates\admin\home.html:143 .\templates\homepage\base.html:126
+#: .\templates\registration\login.html:10
+#: .\templates\registration\login.html:38
+msgid "Login"
+msgstr ""
+
+#: .\templates\admin\home.html:147 .\templates\homepage\base.html:140
+msgid "Admin Page"
+msgstr ""
+
+#: .\templates\admin\order_list.html:11 .\templates\catalog\yourorder.html:11
+msgid "Filter"
+msgstr ""
+
+#: .\templates\admin\order_list.html:14 .\templates\admin\product_list.html:100
+#: .\templates\catalog\yourorder.html:14
+msgid "Start Date"
+msgstr ""
+
+#: .\templates\admin\order_list.html:19 .\templates\admin\product_list.html:104
+#: .\templates\catalog\yourorder.html:19
+msgid "End Date"
+msgstr ""
+
+#: .\templates\admin\order_list.html:24 .\templates\catalog\yourorder.html:24
+msgid "Price Range"
+msgstr ""
+
+#: .\templates\admin\order_list.html:25 .\templates\catalog\yourorder.html:25
+msgid "Min price"
+msgstr ""
+
+#: .\templates\admin\order_list.html:26 .\templates\catalog\yourorder.html:26
+msgid "Max price"
+msgstr ""
+
+#: .\templates\admin\order_list.html:30 .\templates\catalog\yourorder.html:30
+msgid "Refresh"
+msgstr ""
+
+#: .\templates\admin\order_list.html:31 .\templates\catalog\yourorder.html:31
+msgid "Apply"
+msgstr ""
+
+#: .\templates\admin\order_list.html:38 .\templates\catalog\menu.html:23
+#: .\templates\catalog\yourorder.html:38
+msgid "All"
+msgstr ""
+
+#: .\templates\admin\order_list.html:39 .\templates\catalog\yourorder.html:39
+msgid "Pending"
+msgstr ""
+
+#: .\templates\admin\order_list.html:40 .\templates\catalog\yourorder.html:40
+msgid "Ongoing"
+msgstr ""
+
+#: .\templates\admin\order_list.html:41 .\templates\catalog\yourorder.html:41
+msgid "Cancelled"
+msgstr ""
+
+#: .\templates\admin\order_list.html:42 .\templates\catalog\yourorder.html:42
+msgid "Rejected"
+msgstr ""
+
+#: .\templates\admin\order_list.html:43 .\templates\catalog\yourorder.html:43
+msgid "Completed"
+msgstr ""
+
+#: .\templates\admin\order_list.html:50 .\templates\catalog\yourorder.html:50
+msgid "Customer"
+msgstr ""
+
+#: .\templates\admin\order_list.html:51 .\templates\catalog\yourorder.html:51
+msgid "Status"
+msgstr ""
+
+#: .\templates\admin\order_list.html:71 .\templates\catalog\yourorder.html:66
+msgid "Order Date"
+msgstr ""
+
+#: .\templates\admin\order_list.html:72 .\templates\catalog\yourorder.html:67
+msgid "Total Cost"
+msgstr ""
+
+#: .\templates\admin\order_list.html:79 .\templates\catalog\cart.html:46
+msgid "Delete"
+msgstr ""
+
+#: .\templates\admin\order_list.html:84 .\templates\admin\order_list.html:86
+msgid "Reject"
+msgstr ""
+
+#: .\templates\admin\order_list.html:91 .\templates\admin\order_list.html:93
+msgid "Accept"
+msgstr ""
+
+#: .\templates\admin\product_detail.html:11
+msgid "Product Detail"
+msgstr ""
+
+#: .\templates\admin\product_detail.html:81
+#: .\templates\admin\product_form.html:57
+msgid "Return product list"
+msgstr ""
+
+#: .\templates\admin\product_form.html:11
+msgid "Create New Product"
+msgstr ""
+
+#: .\templates\admin\product_form.html:53
+msgid "Create product"
+msgstr ""
+
+#: .\templates\admin\product_list.html:13
+msgid "Products Manage"
+msgstr ""
+
+#: .\templates\admin\product_list.html:18
+msgid "Name"
+msgstr ""
+
+#: .\templates\admin\product_list.html:19
+msgid "Category"
+msgstr ""
+
+#: .\templates\admin\product_list.html:20
+msgid "Stock"
+msgstr ""
+
+#: .\templates\admin\product_list.html:21
+#: .\templates\catalog\product_detail.html:17
+msgid "Sold"
+msgstr ""
+
+#: .\templates\admin\product_list.html:22 .\templates\catalog\cart.html:20
+#: .\templates\catalog\order.html:19
+msgid "Price"
+msgstr ""
+
+#: .\templates\admin\product_list.html:23
+msgid "Promo"
+msgstr ""
+
+#: .\templates\admin\product_list.html:24 .\templates\catalog\cart.html:22
+msgid "Action"
+msgstr ""
+
+#: .\templates\admin\product_list.html:38
+msgid "Delete Promotion"
+msgstr ""
+
+#: .\templates\admin\product_list.html:43
+msgid "Set"
+msgstr ""
+
+#: .\templates\admin\product_list.html:58
+msgid "Page"
+msgstr ""
+
+#: .\templates\admin\product_list.html:58
+msgid "of"
+msgstr ""
+
+#: .\templates\admin\product_list.html:62
+msgid "next"
+msgstr ""
+
+#: .\templates\admin\product_list.html:67
+msgid "Delete selected products"
+msgstr ""
+
+#: .\templates\admin\product_list.html:70
+msgid "--------or--------"
+msgstr ""
+
+#: .\templates\admin\product_list.html:72
+msgid "Create new product"
+msgstr ""
+
+#: .\templates\admin\product_list.html:82
+msgid "Set Promotion"
+msgstr ""
+
+#: .\templates\admin\product_list.html:92
+msgid "Discount Percent"
+msgstr ""
+
+#: .\templates\admin\product_list.html:96
+msgid "Description"
+msgstr ""
+
+#: .\templates\admin\product_list.html:109
+msgid "Close"
+msgstr ""
+
+#: .\templates\admin\statistics.html:13
+msgid "TODAY'S ORDER STATISTICS"
+msgstr ""
+
+#: .\templates\admin\statistics.html:18
+msgid "Day"
+msgstr ""
+
+#: .\templates\admin\statistics.html:19
+msgid "Revenue"
+msgstr ""
+
+#: .\templates\admin\statistics.html:20
+msgid "Number Of Orders"
+msgstr ""
+
+#: .\templates\admin\statistics.html:34
+msgid "STATISTICAL CHART"
+msgstr ""
+
+#: .\templates\admin\statistics.html:38 .\templates\catalog\menu.html:21
+msgid "Filter:"
+msgstr ""
+
+#: .\templates\admin\statistics.html:38
+msgid "Day from"
+msgstr ""
+
+#: .\templates\admin\statistics.html:40
+msgid "To"
+msgstr ""
+
+#: .\templates\admin\statistics.html:45
+msgid "Please make sure the start and end dates are accurate!!!"
+msgstr ""
+
+#: .\templates\admin\user_detail.html:11
+msgid "User Detail"
+msgstr ""
+
+#: .\templates\admin\user_detail.html:56 .\templates\admin\user_form.html:52
+msgid "Return user list"
+msgstr ""
+
+#: .\templates\admin\user_form.html:11
+msgid "Create New User"
+msgstr ""
+
+#: .\templates\admin\user_form.html:13
+#: .\templates\registration\register.html:12
+msgid "There was an error with your submission:"
+msgstr ""
+
+#: .\templates\admin\user_form.html:28
+msgid "Pass Confirm:"
+msgstr ""
+
+#: .\templates\admin\user_form.html:48
+msgid "Create user"
+msgstr ""
+
+#: .\templates\admin\user_list.html:11
+msgid "Users Manage"
+msgstr ""
+
+#: .\templates\admin\user_list.html:38
+msgid "Delete selected users"
+msgstr ""
+
+#: .\templates\admin\user_list.html:43
+msgid "Create new user"
+msgstr ""
+
+#: .\templates\catalog\cart.html:13
+msgid "SHOPPING CART"
+msgstr ""
+
+#: .\templates\catalog\cart.html:14
+msgid "YOUR ORDERS"
+msgstr ""
+
+#: .\templates\catalog\cart.html:19 .\templates\catalog\order.html:18
+msgid "Product Name"
+msgstr ""
+
+#: .\templates\catalog\cart.html:21 .\templates\catalog\order.html:20
+msgid "Quantity"
+msgstr ""
+
+#: .\templates\catalog\cart.html:54 .\templates\catalog\order.html:39
+msgid "Total"
+msgstr ""
+
+#: .\templates\catalog\cart.html:57 .\templates\catalog\order.html:61
+#: .\templates\catalog\order.html:63
+msgid "Order"
+msgstr ""
+
+#: .\templates\catalog\cart.html:59
+msgid "There are no products in your cart, please add products to cart!!!"
+msgstr ""
+
+#: .\templates\catalog\menu.html:12
+msgid "Our Menu"
+msgstr ""
+
+#: .\templates\catalog\menu.html:15
+msgid "Search: "
+msgstr ""
+
+#: .\templates\catalog\menu.html:16
+msgid "Search for food here"
+msgstr ""
+
+#: .\templates\catalog\menu.html:24
+msgid "By Sold Number"
+msgstr ""
+
+#: .\templates\catalog\menu.html:25
+msgid "By Promotion"
+msgstr ""
+
+#: .\templates\catalog\menu.html:53
+msgid "Sold:"
+msgstr ""
+
+#: .\templates\catalog\menu.html:54
+msgid "View More"
+msgstr ""
+
+#: .\templates\catalog\menu.html:78
+msgid "There are no products matching the search results!!!"
+msgstr ""
+
+#: .\templates\catalog\order.html:13
+msgid "YOUR ORDER"
+msgstr ""
+
+#: .\templates\catalog\order.html:42
+msgid "User's Information:"
+msgstr ""
+
+#: .\templates\catalog\order.html:44
+msgid "Name:"
+msgstr ""
+
+#: .\templates\catalog\order.html:46
+msgid "Please enter your name."
+msgstr ""
+
+#: .\templates\catalog\order.html:49
+msgid "User's Phone Number:"
+msgstr ""
+
+#: .\templates\catalog\order.html:51
+msgid "Please enter your phone number."
+msgstr ""
+
+#: .\templates\catalog\order.html:54
+msgid "User's Address:"
+msgstr ""
+
+#: .\templates\catalog\order.html:56
+msgid "Please enter your address."
+msgstr ""
+
+#: .\templates\catalog\order.html:58
+msgid "User's Email:"
+msgstr ""
+
+#: .\templates\catalog\order.html:61
+msgid "Your order is being approved by admin, please wait a little longer!"
+msgstr ""
+
+#: .\templates\catalog\order.html:63
+msgid ""
+"Your information is incomplete, please update all information before "
+"ordering!!!"
+msgstr ""
+
+#: .\templates\catalog\product_detail.html:19
+msgid "Price: "
+msgstr ""
+
+#: .\templates\catalog\product_detail.html:34
+msgid "Add to Cart"
+msgstr ""
+
+#: .\templates\catalog\product_detail.html:43
+#: .\templates\catalog\product_detail.html:62
+msgid "Add a Review"
+msgstr ""
+
+#: .\templates\catalog\product_detail.html:48
+#: .\templates\catalog\product_detail.html:66
+#: .\templates\catalog\product_detail.html:86
+msgid "Rating:"
+msgstr ""
+
+#: .\templates\catalog\product_detail.html:52
+#: .\templates\catalog\product_detail.html:70
+#: .\templates\catalog\product_detail.html:88
+msgid "Review:"
+msgstr ""
+
+#: .\templates\catalog\product_detail.html:56
+#: .\templates\catalog\product_detail.html:74
+msgid "Submit Review"
+msgstr ""
+
+#: .\templates\catalog\product_detail.html:71
+msgid "Login To Add Review"
+msgstr ""
+
+#: .\templates\catalog\product_detail.html:80
+msgid "Product Reviews"
+msgstr ""
+
+#: .\templates\catalog\product_detail.html:91
+msgid "No reviews yet."
+msgstr ""
+
+#: .\templates\catalog\yourorder.html:72
+msgid "Pay"
+msgstr ""
+
+#: .\templates\homepage\base.html:47
+msgid "HOME"
+msgstr ""
+
+#: .\templates\homepage\base.html:48
+msgid "MENU"
+msgstr ""
+
+#: .\templates\homepage\base.html:49
+msgid "ABOUT"
+msgstr ""
+
+#: .\templates\homepage\footer.html:11
+msgid " Contact Us "
+msgstr ""
+
+#: .\templates\homepage\footer.html:15
+msgid "Call Huy: +84 343036100"
+msgstr ""
+
+#: .\templates\homepage\footer.html:28
+msgid ""
+" The most important thing is always the customer's taste and the reliability "
+"of the food "
+msgstr ""
+
+#: .\templates\homepage\footer.html:29
+msgid " We are honored to serve you "
+msgstr ""
+
+#: .\templates\homepage\footer.html:51
+msgid " Opening Hours "
+msgstr ""
+
+#: .\templates\homepage\footer.html:54
+msgid " Everyday "
+msgstr ""
+
+#: .\templates\homepage\index.html:13
+msgid ""
+" We are Hyniu restaurant, managed by Le Quang Huy and Doan Quang Liu with a "
+"chain of 507 stores worldwide."
+msgstr ""
+
+#: .\templates\homepage\index.html:14
+msgid "Welcome to Hyniu Food & Drink! "
+msgstr ""
+
+#: .\templates\registration\login.html:12
+msgid "Your username or password didn't match. Please try again."
+msgstr ""
+
+#: .\templates\registration\login.html:23
+#: .\templates\registration\register.html:30
+msgid "Username"
+msgstr ""
+
+#: .\templates\registration\login.html:34
+#: .\templates\registration\register.html:52
+msgid "Password"
+msgstr ""
+
+#: .\templates\registration\login.html:42
+msgid "Don't have an account yet? "
+msgstr ""
+
+#: .\templates\registration\login.html:43
+msgid "Register Now!"
+msgstr ""
+
+#: .\templates\registration\profile.html:11
+msgid "Profile"
+msgstr ""
+
+#: .\templates\registration\profile.html:39
+msgid "Please Fill Out This Field"
+msgstr ""
+
+#: .\templates\registration\profile.html:46
+msgid "Save Changes"
+msgstr ""
+
+#: .\templates\registration\profile.html:52
+msgid "Logout"
+msgstr ""
+
+#: .\templates\registration\register.html:10
+#: .\templates\registration\register.html:67
+msgid "Register"
+msgstr ""
+
+#: .\templates\registration\register.html:41
+msgid "Email"
+msgstr ""
+
+#: .\templates\registration\register.html:63
+msgid "Confirm Password"
+msgstr ""
+
+#: .\templates\registration\register.html:69
+msgid "Already have an account? "
+msgstr ""
+
+#: .\templates\registration\register.html:70
+msgid "Login here!"
+msgstr ""

@@ -1,0 +1,66 @@
+{% extends 'homepage/base.html'%}
+{% load i18n %}
+{% load static %}
+{%load djmoney%}
+{% money_localize money on}
+
+{% block content %}
+
+  <!-- slider section -->
+    <section class="slider_section ">
+            <div class="container ">
+                <div class="cart-container">
+                    <h1 class="total-text">{% trans "SHOPPING CART" %} </h1>
+                    <a  href="{% url 'home:your_order' %}"  class="ordercart" > {% trans "YOUR ORDERS" %} </a>
+                    <br>
+                  <table class="tablecart">
+                      <thead>
+                          <tr>
+                            <th>{% trans "Product Name" %}</th>
+                            <th>{% trans "Price" %}</th>
+                            <th>{% trans "Quantity" %}</th>
+                            <th>{% trans "Action" %}</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          {% for cart in cartall %}
+                          <tr id="row_{{cart.cart.id}}" data-url="{% url 'home:update_cart'  %}" data-csrf="{{ csrf_token }}">
+                            <td>{% trans cart.product.name %}</td>
+                            <td>{% if cart.promotion > 0 %}
+                              <h6 class="text-danger"> <del>{% money_localize cart.product.base_price 'VND' %} </del></h6>
+                              <h6> {% money_localize cart.promotion 'VND' %} </h6>
+                            {% else %}
+                              <h6> {% money_localize cart.product.base_price 'VND' %} </h6>
+                            {% endif %}</td>
+                              <td>
+                                <div>
+                                    {% csrf_token %}
+                                    <button onclick="action('{{cart.cart.id}}', 'decrease')">-</button>
+                                    <span id="quantity_{{cart.cart.id}}">{{cart.cart.quantity}}</span>
+                                    <button  onclick="action('{{cart.cart.id}}', 'increase')">+</button>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    {% csrf_token %}
+                                    <button  onclick="action('{{cart.cart.id}}', 'delete')">{% trans "Delete" %}</button>
+                                </div>
+                            </td>
+                          </tr>
+                          {% endfor %}
+                      </tbody>
+                  </table>        
+                  <div>         
+                    <h1 class="d-inline">{% trans "Total" %}: </h1><h1 class="d-inline" id="total_price">{% money_localize total_price 'VND' %}</h1>
+                  </div> 
+                  {% if cartall %}
+                  <a href="{% url 'home:order' %}" class="ordercart">{% trans "Order" %}</a>
+                  {% else %}
+                  <a href="{% url 'home:cart' %}" onclick="alert('{% trans "There are no products in your cart, please add products to cart!!!" %}')" class="ordercart">Order</a>
+                  {% endif %}
+                </div>   
+            </div>
+    </section>
+  <!-- end slider section -->
+</div>
+{% endblock %}

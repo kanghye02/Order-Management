@@ -1,0 +1,1248 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-17 23:24+0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: .\home\forms.py:44
+msgid "The number in stock must be a positive integer."
+msgstr "Số lượng trong kho phải là số nguyên dương."
+
+#: .\home\forms.py:50
+msgid "The base price must be a positive integer."
+msgstr "Giá cơ bản phải là số nguyên dương."
+
+#: .\home\models.py:18
+msgid "Parent category of this category (if any)."
+msgstr "Thể loại gốc của thể loại này (nếu có)."
+
+#: .\home\models.py:25
+msgid "Product image"
+msgstr "URL của hình ảnh sản phẩm."
+
+#: .\home\models.py:26
+msgid "Brief description of the product."
+msgstr "Mô tả ngắn gọn về sản phẩm."
+
+#: .\home\models.py:27
+msgid "The origin price of the product."
+msgstr "giá gốc của sản phẩm."
+
+#: .\home\models.py:28
+msgid "Quantity of the product available in stock."
+msgstr "Số lượng sản phẩm có sẵn trong kho."
+
+#: .\home\models.py:29
+msgid "Number of products sold."
+msgstr "Số lượng sản phẩm đã bán."
+
+#: .\home\models.py:48
+msgid "Date of the order."
+msgstr "Ngày đặt hàng."
+
+#: .\home\models.py:56
+msgid "Status of the order."
+msgstr "Tình trạng của đơn hàng."
+
+#: .\home\models.py:59 .\home\models.py:66
+msgid "total cost of order."
+msgstr "tổng chi phí của đơn hàng"
+
+#: .\home\models.py:62
+msgid "Price of product at order."
+msgstr "Giá sản phẩm theo đơn hàng."
+
+#: .\home\models.py:63
+msgid "total quantity of products ordered."
+msgstr "tổng số lượng sản phẩm đã đặt hàng."
+
+#: .\home\models.py:72
+msgid "Quantity of each product in the cart."
+msgstr "Số lượng của từng sản phẩm trong giỏ hàng."
+
+#: .\home\models.py:78
+msgid "The number of sales of the best-selling product."
+msgstr "Số lượng bán ra của sản phẩm bán chạy nhất"
+
+#: .\home\models.py:81
+msgid "Best Seller"
+msgstr "Sản phẩm bán chạy"
+
+#: .\home\models.py:82
+msgid "Best Sellers"
+msgstr "Sản phẩm bán chạy"
+
+#: .\home\models.py:86
+msgid "Brief description of the promotion."
+msgstr "Mô tả ngắn gọn về khuyến mãi."
+
+#: .\home\views.py:76 .\home\views.py:221 .\home\views.py:288
+#: .\home\views.py:440
+msgid "Changes saved"
+msgstr "Thay đổi đã lưu"
+
+#: .\home\views.py:489 .\home\views.py:499 .\home\views.py:512
+msgid "Đơn đặt hàng không tồn tại"
+msgstr ""
+
+#: .\home\views.py:509
+msgid "Không thể xóa đơn đặt hàng với trạng thái này"
+msgstr ""
+
+#: .\shop\settings.py:121
+msgid "VI"
+msgstr "VI"
+
+#: .\shop\settings.py:122
+msgid "EN"
+msgstr "EN"
+
+#: .\templates\admin\category_detail.html:11
+msgid "Category Detail"
+msgstr "Chi Tiết Thể Loại"
+
+#: .\templates\admin\category_detail.html:52
+#: .\templates\admin\product_detail.html:77
+#: .\templates\admin\product_list.html:110
+#: .\templates\admin\user_detail.html:52
+msgid "Save changes"
+msgstr "Lưu thay đổi"
+
+#: .\templates\admin\category_detail.html:56
+#: .\templates\admin\category_form.html:51
+msgid "Return category list"
+msgstr "Quay lại danh sách thể loại"
+
+#: .\templates\admin\category_form.html:11
+msgid "Create New Category"
+msgstr "Tạo Thể Loại Mới"
+
+#: .\templates\admin\category_form.html:47
+msgid "Create category"
+msgstr "Tạo thể loại"
+
+#: .\templates\admin\category_list.html:11
+msgid "Categories Manage"
+msgstr "Quản lý thể loại"
+
+#: .\templates\admin\category_list.html:16
+msgid "Category Name"
+msgstr "Tên thể loại"
+
+#: .\templates\admin\category_list.html:44
+msgid "Delete selected categories"
+msgstr "Xóa thể loại đã chọn"
+
+#: .\templates\admin\category_list.html:49
+msgid "Create new category"
+msgstr "Tạo thể loại mới"
+
+#: .\templates\admin\home.html:48
+msgid "ORDER"
+msgstr "Đơn"
+
+#: .\templates\admin\home.html:49
+msgid "CATEGORY"
+msgstr "T.Loại"
+
+#: .\templates\admin\home.html:50
+msgid "PRODUCT"
+msgstr "S.Phẩm"
+
+#: .\templates\admin\home.html:51
+msgid "USER"
+msgstr "Người Dùng"
+
+#: .\templates\admin\home.html:52
+msgid "STATISTICS"
+msgstr "T.KÊ"
+
+#: .\templates\admin\home.html:143 .\templates\homepage\base.html:126
+#: .\templates\registration\login.html:10
+#: .\templates\registration\login.html:38
+msgid "Login"
+msgstr "Đăng Nhập"
+
+#: .\templates\admin\home.html:147 .\templates\homepage\base.html:140
+msgid "Admin Page"
+msgstr "Trang Quản Lý"
+
+#: .\templates\admin\order_list.html:11 .\templates\catalog\yourorder.html:11
+msgid "Filter"
+msgstr "Bộ Lọc"
+
+#: .\templates\admin\order_list.html:14 .\templates\admin\product_list.html:100
+#: .\templates\catalog\yourorder.html:14
+msgid "Start Date"
+msgstr "Thời Gian Bắt Đầu"
+
+#: .\templates\admin\order_list.html:19 .\templates\admin\product_list.html:104
+#: .\templates\catalog\yourorder.html:19
+msgid "End Date"
+msgstr "Thời Gian Kết Thúc"
+
+#: .\templates\admin\order_list.html:24 .\templates\catalog\yourorder.html:24
+msgid "Price Range"
+msgstr "Khoảng Giá"
+
+#: .\templates\admin\order_list.html:25 .\templates\catalog\yourorder.html:25
+msgid "Min price"
+msgstr "Giá nhỏ nhất"
+
+#: .\templates\admin\order_list.html:26 .\templates\catalog\yourorder.html:26
+msgid "Max price"
+msgstr "Giá lớn nhất"
+
+#: .\templates\admin\order_list.html:30 .\templates\catalog\yourorder.html:30
+msgid "Refresh"
+msgstr "Xóa lọc"
+
+#: .\templates\admin\order_list.html:31 .\templates\catalog\yourorder.html:31
+msgid "Apply"
+msgstr "Lọc"
+
+#: .\templates\admin\order_list.html:38 .\templates\catalog\menu.html:23
+#: .\templates\catalog\yourorder.html:38
+msgid "All"
+msgstr "Tất Cả"
+
+#: .\templates\admin\order_list.html:39 .\templates\catalog\yourorder.html:39
+msgid "Pending"
+msgstr "Đang xử lý"
+
+#: .\templates\admin\order_list.html:40 .\templates\catalog\yourorder.html:40
+msgid "Ongoing"
+msgstr "Đang Thực Hiện"
+
+#: .\templates\admin\order_list.html:41 .\templates\catalog\yourorder.html:41
+msgid "Cancelled"
+msgstr "Đã Hủy"
+
+#: .\templates\admin\order_list.html:42 .\templates\catalog\yourorder.html:42
+msgid "Rejected"
+msgstr "Từ chối"
+
+#: .\templates\admin\order_list.html:43 .\templates\catalog\yourorder.html:43
+msgid "Completed"
+msgstr "Hoàn Thành"
+
+#: .\templates\admin\order_list.html:50 .\templates\catalog\yourorder.html:50
+msgid "Customer"
+msgstr "Khách Hàng"
+
+#: .\templates\admin\order_list.html:51 .\templates\catalog\yourorder.html:51
+msgid "Status"
+msgstr "Trạng Thái Đơn Hàng"
+
+#: .\templates\admin\order_list.html:71 .\templates\catalog\yourorder.html:66
+msgid "Order Date"
+msgstr "Thời Gian Đặt"
+
+#: .\templates\admin\order_list.html:72 .\templates\catalog\yourorder.html:67
+msgid "Total Cost"
+msgstr "Thành Tiền"
+
+#: .\templates\admin\order_list.html:79 .\templates\catalog\cart.html:46
+msgid "Delete"
+msgstr "Xóa"
+
+#: .\templates\admin\order_list.html:84 .\templates\admin\order_list.html:86
+msgid "Reject"
+msgstr "Từ Chối"
+
+#: .\templates\admin\order_list.html:91 .\templates\admin\order_list.html:93
+msgid "Accept"
+msgstr "Chấp Nhận"
+
+#: .\templates\admin\product_detail.html:11
+msgid "Product Detail"
+msgstr "Chi tiết sản phẩm"
+
+#: .\templates\admin\product_detail.html:81
+#: .\templates\admin\product_form.html:57
+msgid "Return product list"
+msgstr "Quay lại danh sách sản phẩm"
+
+#: .\templates\admin\product_form.html:11
+msgid "Create New Product"
+msgstr "Tạo Sản Phẩm Mới"
+
+#: .\templates\admin\product_form.html:53
+msgid "Create product"
+msgstr "Tạo sản phẩm"
+
+#: .\templates\admin\product_list.html:13
+msgid "Products Manage"
+msgstr "Quản Lý Sản Phẩm"
+
+#: .\templates\admin\product_list.html:18
+msgid "Name"
+msgstr "Tên"
+
+#: .\templates\admin\product_list.html:19
+msgid "Category"
+msgstr "Thể loại"
+
+#: .\templates\admin\product_list.html:20
+msgid "Stock"
+msgstr "Số Lượng"
+
+#: .\templates\admin\product_list.html:21
+#: .\templates\catalog\product_detail.html:17
+msgid "Sold"
+msgstr "Đã Bán"
+
+#: .\templates\admin\product_list.html:22 .\templates\catalog\cart.html:20
+#: .\templates\catalog\order.html:19
+msgid "Price"
+msgstr "Giá"
+
+#: .\templates\admin\product_list.html:23
+msgid "Promo"
+msgstr "K.Mãi"
+
+#: .\templates\admin\product_list.html:24 .\templates\catalog\cart.html:22
+msgid "Action"
+msgstr "Hành Động"
+
+#: .\templates\admin\product_list.html:38
+msgid "Delete Promotion"
+msgstr "Xóa K.M"
+
+#: .\templates\admin\product_list.html:43
+msgid "Set"
+msgstr "Đặt K.M"
+
+#: .\templates\admin\product_list.html:58
+msgid "Page"
+msgstr "Trang"
+
+#: .\templates\admin\product_list.html:58
+msgid "of"
+msgstr "trên"
+
+#: .\templates\admin\product_list.html:62
+msgid "next"
+msgstr "tiếp"
+
+#: .\templates\admin\product_list.html:67
+msgid "Delete selected products"
+msgstr "Xóa sản phẩm đã chọn"
+
+#: .\templates\admin\product_list.html:70
+msgid "--------or--------"
+msgstr "--------hoặc--------"
+
+#: .\templates\admin\product_list.html:72
+msgid "Create new product"
+msgstr "Tạo sản phẩm mới"
+
+#: .\templates\admin\product_list.html:82
+msgid "Set Promotion"
+msgstr "Thiết Lập K.Mãi"
+
+#: .\templates\admin\product_list.html:92
+msgid "Discount Percent"
+msgstr "Phần Trăm Giảm Giá"
+
+#: .\templates\admin\product_list.html:96
+msgid "Description"
+msgstr "Mô Tả"
+
+#: .\templates\admin\product_list.html:109
+msgid "Close"
+msgstr "Đóng"
+
+#: .\templates\admin\statistics.html:13
+msgid "TODAY'S ORDER STATISTICS"
+msgstr "THỐNG KÊ ĐƠN HÀNG HÔM NAY"
+
+#: .\templates\admin\statistics.html:18
+msgid "Day"
+msgstr "Ngày"
+
+#: .\templates\admin\statistics.html:19
+msgid "Revenue"
+msgstr "Doanh thu"
+
+#: .\templates\admin\statistics.html:20
+msgid "Number Of Orders"
+msgstr "Số lượng sản phẩm đã bán."
+
+#: .\templates\admin\statistics.html:34
+msgid "STATISTICAL CHART"
+msgstr "BIỂU ĐỒ THỐNG KÊ"
+
+#: .\templates\admin\statistics.html:38 .\templates\catalog\menu.html:21
+msgid "Filter:"
+msgstr "Lọc:"
+
+#: .\templates\admin\statistics.html:38
+msgid "Day from"
+msgstr "Ngày từ"
+
+#: .\templates\admin\statistics.html:40
+msgid "To"
+msgstr "Đến"
+
+#: .\templates\admin\statistics.html:45
+msgid "Please make sure the start and end dates are accurate!!!"
+msgstr ""
+"Hãy chắc chắn bạn đã chọn ngày bắt đầu và kết thúc một cách chính xác !!!"
+
+#: .\templates\admin\user_detail.html:11
+msgid "User Detail"
+msgstr "Chi Tiết Người dùng"
+
+#: .\templates\admin\user_detail.html:56 .\templates\admin\user_form.html:52
+msgid "Return user list"
+msgstr "Quay lại danh sách người dùng"
+
+#: .\templates\admin\user_form.html:11
+msgid "Create New User"
+msgstr "Tạo Người Dùng Mới"
+
+#: .\templates\admin\user_form.html:13
+#: .\templates\registration\register.html:12
+msgid "There was an error with your submission:"
+msgstr "Đã xảy ra lỗi với nội dung bạn gửi:"
+
+#: .\templates\admin\user_form.html:28
+msgid "Pass Confirm:"
+msgstr "Xác nhận mật khẩu:"
+
+#: .\templates\admin\user_form.html:48
+msgid "Create user"
+msgstr "Tạo người dùng"
+
+#: .\templates\admin\user_list.html:11
+msgid "Users Manage"
+msgstr "Quản Lý Người Dùng"
+
+#: .\templates\admin\user_list.html:38
+msgid "Delete selected users"
+msgstr "Xóa người dùng đã chọn"
+
+#: .\templates\admin\user_list.html:43
+msgid "Create new user"
+msgstr "Tạo người dùng mới"
+
+#: .\templates\catalog\cart.html:13
+msgid "SHOPPING CART"
+msgstr "GIỎ HÀNG"
+
+#: .\templates\catalog\cart.html:14
+msgid "YOUR ORDERS"
+msgstr "Đơn Của Bạn"
+
+#: .\templates\catalog\cart.html:19 .\templates\catalog\order.html:18
+msgid "Product Name"
+msgstr "Tên món"
+
+#: .\templates\catalog\cart.html:21 .\templates\catalog\order.html:20
+msgid "Quantity"
+msgstr "Số Lượng"
+
+#: .\templates\catalog\cart.html:54 .\templates\catalog\order.html:39
+msgid "Total"
+msgstr "Thành Tiền"
+
+#: .\templates\catalog\cart.html:57 .\templates\catalog\order.html:61
+#: .\templates\catalog\order.html:63
+msgid "Order"
+msgstr "Đặt Hàng"
+
+#: .\templates\catalog\cart.html:59
+msgid "There are no products in your cart, please add products to cart!!!"
+msgstr ""
+"Không có món trong giỏ hàng của bạn, hãy thêm món vào giỏ hàng trước khi "
+"đặt!!!"
+
+#: .\templates\catalog\menu.html:12
+msgid "Our Menu"
+msgstr "Thực Đơn Của Chúng Tôi"
+
+#: .\templates\catalog\menu.html:15
+msgid "Search: "
+msgstr "Tìm kiếm: "
+
+#: .\templates\catalog\menu.html:16
+msgid "Search for food here"
+msgstr "Tìm món ăn ở đây"
+
+#: .\templates\catalog\menu.html:24
+msgid "By Sold Number"
+msgstr "Theo Số Lượng Bán"
+
+#: .\templates\catalog\menu.html:25
+msgid "By Promotion"
+msgstr "Theo Khuyến Mãi"
+
+#: .\templates\catalog\menu.html:53
+msgid "Sold:"
+msgstr "Đã Bán:"
+
+#: .\templates\catalog\menu.html:54
+msgid "View More"
+msgstr "Chi tiết"
+
+#: .\templates\catalog\menu.html:78
+msgid "There are no products matching the search results!!!"
+msgstr " Không có món nào phù hợp với kết quả tìm kiếm của bạn!!! "
+
+#: .\templates\catalog\order.html:13
+msgid "YOUR ORDER"
+msgstr "Đơn Của Bạn"
+
+#: .\templates\catalog\order.html:42
+msgid "User's Information:"
+msgstr "Thông Tin Người Dùng: "
+
+#: .\templates\catalog\order.html:44
+msgid "Name:"
+msgstr "Tên: "
+
+#: .\templates\catalog\order.html:46
+msgid "Please enter your name."
+msgstr "Hãy thêm tên của bạn."
+
+#: .\templates\catalog\order.html:49
+msgid "User's Phone Number:"
+msgstr "Số Điện Thoại Người Dùng:"
+
+#: .\templates\catalog\order.html:51
+msgid "Please enter your phone number."
+msgstr "Hãy thêm số điện thoại của bạn."
+
+#: .\templates\catalog\order.html:54
+msgid "User's Address:"
+msgstr "Địa Chỉ:"
+
+#: .\templates\catalog\order.html:56
+msgid "Please enter your address."
+msgstr "Hãy nhập địa chỉ của bạn"
+
+#: .\templates\catalog\order.html:58
+msgid "User's Email:"
+msgstr "Email Người Dùng:"
+
+#: .\templates\catalog\order.html:61
+msgid "Your order is being approved by admin, please wait a little longer!"
+msgstr ""
+"Đơn hàng của bạn đang được kiểm duyệt bởi admin, hãy chờ thêm một chút thời "
+"gian"
+
+#: .\templates\catalog\order.html:63
+msgid ""
+"Your information is incomplete, please update all information before "
+"ordering!!!"
+msgstr ""
+"Thông tin của bạn chưa hoàn thiện, hãy cập nhật thông tin ở tài khoản cá "
+"nhân trước khi đặt hàng!!!"
+
+#: .\templates\catalog\product_detail.html:19
+#, fuzzy
+#| msgid "Price"
+msgid "Price: "
+msgstr "Giá"
+
+#: .\templates\catalog\product_detail.html:34
+msgid "Add to Cart"
+msgstr "Thêm vào Giỏ hàng"
+
+#: .\templates\catalog\product_detail.html:43
+#: .\templates\catalog\product_detail.html:62
+msgid "Add a Review"
+msgstr "Thêm Đánh Giá"
+
+#: .\templates\catalog\product_detail.html:48
+#: .\templates\catalog\product_detail.html:66
+#: .\templates\catalog\product_detail.html:86
+msgid "Rating:"
+msgstr "Điểm:"
+
+#: .\templates\catalog\product_detail.html:52
+#: .\templates\catalog\product_detail.html:70
+#: .\templates\catalog\product_detail.html:88
+msgid "Review:"
+msgstr "Đánh Giá:"
+
+#: .\templates\catalog\product_detail.html:56
+#: .\templates\catalog\product_detail.html:74
+msgid "Submit Review"
+msgstr "Gửi Đánh giá"
+
+#: .\templates\catalog\product_detail.html:71
+msgid "Login To Add Review"
+msgstr "Đăng Nhập Để Đánh Giá"
+
+#: .\templates\catalog\product_detail.html:80
+#, fuzzy
+#| msgid "Product image"
+msgid "Product Reviews"
+msgstr "URL của hình ảnh sản phẩm."
+
+#: .\templates\catalog\product_detail.html:91
+msgid "No reviews yet."
+msgstr "Chưa có đắnh giá về sản phẩm."
+
+#: .\templates\catalog\yourorder.html:72
+msgid "Pay"
+msgstr "Thanh Toán"
+
+#: .\templates\homepage\base.html:47
+msgid "HOME"
+msgstr "TR.CHỦ"
+
+#: .\templates\homepage\base.html:48
+msgid "MENU"
+msgstr "T.ĐƠN"
+
+#: .\templates\homepage\base.html:49
+msgid "ABOUT"
+msgstr "VỀ HYNIU"
+
+#: .\templates\homepage\footer.html:11
+msgid " Contact Us "
+msgstr "Liên Hệ Chúng Tôi"
+
+#: .\templates\homepage\footer.html:15
+msgid "Call Huy: +84 343036100"
+msgstr "Gọi Huy: +84 343036100"
+
+#: .\templates\homepage\footer.html:28
+msgid ""
+" The most important thing is always the customer's taste and the reliability "
+"of the food "
+msgstr ""
+" Điều quan trọng nhất với chúng tôi luôn là trải nghiệm của khách hàng và "
+"chất lượng của món ăn"
+
+#: .\templates\homepage\footer.html:29
+msgid " We are honored to serve you "
+msgstr "Được phục vụ quý khách là vinh hạnh của chúng tôi"
+
+#: .\templates\homepage\footer.html:51
+msgid " Opening Hours "
+msgstr "Giờ Mở Cửa"
+
+#: .\templates\homepage\footer.html:54
+msgid " Everyday "
+msgstr "Mỗi ngày"
+
+#: .\templates\homepage\index.html:13
+msgid ""
+" We are Hyniu restaurant, managed by Le Quang Huy and Doan Quang Liu with a "
+"chain of 507 stores worldwide."
+msgstr ""
+"Chúng tôi là nhà hàng Hyniu, được quản lý bởi Lê Quang Huy và Đoàn Quang Liu "
+"với một chuỗi 507 nhà hàng trên toàn thế giới."
+
+#: .\templates\homepage\index.html:14
+msgid "Welcome to Hyniu Food & Drink! "
+msgstr "Chào mừng bạn đến với Hyniu Food & Drink!"
+
+#: .\templates\registration\login.html:12
+msgid "Your username or password didn't match. Please try again."
+msgstr "Tên đăng nhập và mật khẩu của bạn không khớp. Hãy thử lại"
+
+#: .\templates\registration\login.html:23
+#: .\templates\registration\register.html:30
+msgid "Username"
+msgstr "Tên Đăng Nhập"
+
+#: .\templates\registration\login.html:34
+#: .\templates\registration\register.html:52
+msgid "Password"
+msgstr "Mật Khẩu"
+
+#: .\templates\registration\login.html:42
+msgid "Don't have an account yet? "
+msgstr "Chưa có tài khoản? "
+
+#: .\templates\registration\login.html:43
+msgid "Register Now!"
+msgstr "Đăng Ký Ngay!"
+
+#: .\templates\registration\profile.html:11
+msgid "Profile"
+msgstr "Thông tin"
+
+#: .\templates\registration\profile.html:39
+msgid "Please Fill Out This Field"
+msgstr "Hãy Điền Vào Trường Này"
+
+#: .\templates\registration\profile.html:46
+msgid "Save Changes"
+msgstr "Lưu Thay Đổi"
+
+#: .\templates\registration\profile.html:52
+msgid "Logout"
+msgstr "Đăng Xuất"
+
+#: .\templates\registration\register.html:10
+#: .\templates\registration\register.html:67
+msgid "Register"
+msgstr "Đăng Ký"
+
+#: .\templates\registration\register.html:41
+msgid "Email"
+msgstr "Email"
+
+#: .\templates\registration\register.html:63
+msgid "Confirm Password"
+msgstr "Xác Nhận Mật Khẩu"
+
+#: .\templates\registration\register.html:69
+msgid "Already have an account? "
+msgstr "Đã có tài khoản? "
+
+#: .\templates\registration\register.html:70
+msgid "Login here!"
+msgstr "Đăng nhập ở đây!"
+
+#~ msgid "Call Liu: +84 394188326"
+#~ msgstr "Gọi Liu: +84 394188326"
+
+#~ msgid "Your order has been cancelled!"
+#~ msgstr "Đơn hàng của bạn đã được hủy"
+
+#~ msgid "Cancel Order"
+#~ msgstr "Hủy đơn hàng"
+
+#~ msgid "Your order has been paid!"
+#~ msgstr "Đơn hàng của bạn đã được thanh toán!"
+
+#~ msgid "Order Date:"
+#~ msgstr "Thời Gian Đặt: "
+
+#~ msgid "User's Status:"
+#~ msgstr "Trạng Thái Đơn Hàng: "
+
+#~ msgid "Parent"
+#~ msgstr "Nhánh Cha"
+
+#~ msgid "Phone"
+#~ msgstr "SĐT"
+
+#~ msgid "Address"
+#~ msgstr "Địa Chỉ"
+
+#~ msgid "Milk Tea"
+#~ msgstr "Trà Sữa"
+
+#~ msgid "Snack"
+#~ msgstr "Đồ Ăn Nhẹ"
+
+#~ msgid "Soda"
+#~ msgstr "Nước Ngọt"
+
+#~ msgid "Coffee"
+#~ msgstr "Cà phê"
+
+#~ msgid "Fried Chicken"
+#~ msgstr "Gà Rán"
+
+#~ msgid "White coffee"
+#~ msgstr "Bạc Xỉu"
+
+#~ msgid ""
+#~ "white coffee is used to refer to regular black coffee that has had milk, "
+#~ "cream or some other whitener added to it"
+#~ msgstr ""
+#~ "Bạc Xỉu được dùng để chỉ cà phê đen thông thường được thêm sữa, kem vào "
+#~ "để tăng vị ngon, thơm ngậy."
+
+#~ msgid "Black Coffee"
+#~ msgstr "Cà phê đen"
+
+#~ msgid "Coffee served as a beverage without cream or milk."
+#~ msgstr "Cà phê được phục vụ như nguyên bản, không có kem hoặc sữa."
+
+#~ msgid "Egg coffee"
+#~ msgstr "Cà phê trứng"
+
+#~ msgid ""
+#~ "An egg coffee is a Vietnamese drink traditionally prepared with egg "
+#~ "yolks, sugar, condensed milk and robusta coffee."
+#~ msgstr ""
+#~ "Cà phê trứng là thức uống truyền thống của người Việt được pha chế với "
+#~ "lòng đỏ trứng, đường, sữa đặc và cà phê Robusta."
+
+#~ msgid "Capuchino"
+#~ msgstr "Capuchino"
+
+#~ msgid ""
+#~ "Variations of the drink involve the use of cream instead of milk, using "
+#~ "non-dairy milk substitutes and flavoring with cinnamon (in the United "
+#~ "States) or chocolate powder (in Europe)."
+#~ msgstr ""
+#~ "Các biến thể của đồ uống liên quan đến việc sử dụng kem thay vì sữa, sử "
+#~ "dụng các sản phẩm thay thế sữa không phải sữa và hương liệu với quế (ở "
+#~ "Hoa Kỳ) hoặc bột sô cô la (ở Châu Âu)."
+
+#~ msgid "Latte"
+#~ msgstr "Latte"
+
+#~ msgid ""
+#~ "A coffee drink of Italian origin made with espresso and steamed milk. "
+#~ "Variants include the chocolate-flavored mocha or replacing the coffee "
+#~ "with another beverage base such as masala chai (spiced Indian tea), mate, "
+#~ "matcha, turmeric or rooibos."
+#~ msgstr ""
+#~ "Một thức uống cà phê có nguồn gốc từ Ý được pha bằng espresso và sữa hấp. "
+#~ "Các biến thể bao gồm mocha có hương vị sô cô la hoặc thay thế cà phê bằng "
+#~ "một loại đồ uống khác như masala chai (trà gia vị Ấn Độ), mate, matcha, "
+#~ "nghệ hoặc rooibos."
+
+#~ msgid "Mushroom Chicken Pizza"
+#~ msgstr "Pizza Gà Nấm"
+
+#~ msgid ""
+#~ "Delicious pizza with roasted chicken, mushrooms, spinach, and homemade "
+#~ "kale pesto sauce. An easy, fun, and healthful pizza!"
+#~ msgstr ""
+#~ "Bánh pizza thơm ngon với thịt gà nướng, nấm, rau bina và sốt pesto cải "
+#~ "xoăn tự làm. Một chiếc bánh pizza dễ dàng, thú vị và tốt cho sức khỏe!"
+
+#~ msgid "Seafood Pizza"
+#~ msgstr "Pizza Hải Sản"
+
+#~ msgid ""
+#~ "Seafood pizza is pizza prepared with seafood as a primary ingredient."
+#~ msgstr ""
+#~ "Pizza hải sản là một loại pizza được làm với hải sản là thành phần chính."
+
+#~ msgid "Veggie Pizza"
+#~ msgstr "Pizza Rau Củ"
+
+#~ msgid ""
+#~ "This veggie pizza is made from crescent-roll dough and a cream cheesy "
+#~ "spread for an easy, fresh take on a favorite — packed with crunchy"
+#~ msgstr ""
+#~ "Pizza rau củ này được làm từ bột láng và một lớp kem phô mai mịn màng để "
+#~ "tạo ra một phiên bản mới dễ làm, tươi mát của món ăn ưa thích — đậy ắp vị "
+#~ "giòn."
+
+#~ msgid "Mixed Pizza"
+#~ msgstr "Pizza Thập Cẩm"
+
+#~ msgid ""
+#~ "Mixed pizza is a type of pizza that combines ingredients from many other "
+#~ "types of pizza such as seafood, vegetables, chicken, sausage..."
+#~ msgstr ""
+#~ "Pizza thập cẩm là một loại pizza kết hợp các thành phần từ nhiều loại "
+#~ "pizza khác nhau như hải sản, rau cải, gà, xúc xích..."
+
+#~ msgid "Sausage Pizza"
+#~ msgstr "Pizza Xúc Xích"
+
+#~ msgid ""
+#~ "Sausage pizza with the main ingredient being delicious sausages covered "
+#~ "with fatty cheese and a crispy crust."
+#~ msgstr ""
+#~ "Pizza xúc xích với thành phần chính là xúc xích thơm ngon được phủ bởi "
+#~ "lớp phô mai béo và lớp vỏ giòn."
+
+#~ msgid "Fried Chicken Wings"
+#~ msgstr "Cánh Gà Chiên"
+
+#~ msgid ""
+#~ "Crispy fried chicken wings with HyNiu's special recipe makes the chicken "
+#~ "wings delicious and crispy"
+#~ msgstr ""
+#~ "Cánh gà chiên giòn với công thức đặc biệt của HyNiu tạo nên hương vị ngon "
+#~ "và giòn."
+
+#~ msgid "Fried Chicken Thighs"
+#~ msgstr "Đùi Gà Chiên"
+
+#~ msgid ""
+#~ "Crispy fried chicken thighs with HyNiu's special recipe helps make the "
+#~ "chicken wings delicious and crispy"
+#~ msgstr ""
+#~ "Đùi gà chiên giòn với công thức đặc biệt của HyNiu giúp đùi gà ngon và "
+#~ "giòn."
+
+#~ msgid "Hyniu's Sauce Fried Chicken"
+#~ msgstr "Cánh Gà Chiên Sốt Hyniu"
+
+#~ msgid ""
+#~ "Crispy fried chicken with exclusive Hyniu sauce, sweet and spicy flavor, "
+#~ "our formula has been researched for 5 years to perfect, giving you a "
+#~ "wonderful experience."
+#~ msgstr ""
+#~ "Cánh gà chiên giòn với sốt Hyniu độc đáo, hương vị ngọt và cay, công thức "
+#~ "của chúng tôi đã được nghiên cứu trong 5 năm để hoàn thiện, mang đến cho "
+#~ "bạn trải nghiệm tuyệt vời."
+
+#~ msgid "Chicken Pieces"
+#~ msgstr "Gà Miếng"
+
+#~ msgid ""
+#~ "Never get tired of eating our crispy fried chicken breast, with HyNiu "
+#~ "restaurant's exclusive recipe and method."
+#~ msgstr ""
+#~ "Không bao giờ chán khi ăn miếng gà chiên giòn của chúng tôi, với công "
+#~ "thức và phương pháp độc quyền của nhà hàng HyNiu."
+
+#~ msgid "Cheese Chicken"
+#~ msgstr "Gà Phô Mai"
+
+#~ msgid ""
+#~ "Crispy fried chicken pieces combined with cheese sauce create a unique "
+#~ "yet appealing flavor"
+#~ msgstr ""
+#~ "Miếng gà chiên giòn kết hợp với sốt phô mai tạo nên hương vị độc đáo "
+#~ "nhưng hấp dẫn."
+
+#~ msgid "Sunflower Seed"
+#~ msgstr "Hạt Hướng Dương"
+
+#~ msgid ""
+#~ "Sunflower seeds are a source of many vitamins and minerals that can "
+#~ "support your immune system and increase your ability to fight off viruses."
+#~ msgstr ""
+#~ "Hạt hướng dương là nguồn cung cấp nhiều loại vitamin và khoáng chất có "
+#~ "thể hỗ trợ hệ miễn dịch và tăng khả năng chống lại vi khuẩn."
+
+#~ msgid "Coconut Flavored Sunflower Seeds"
+#~ msgstr "Hạt Hướng Dương Vị Dừa"
+
+#~ msgid "Sunflower seeds combine delicious coconut flavor"
+#~ msgstr "Hạt hướng dương kết hợp với hương vị dừa thơm ngon."
+
+#~ msgid "Chicken Feet With Super Spicy Thai Sauce"
+#~ msgstr "Chân Gà Sốt Thái Cực Cay"
+
+#~ msgid ""
+#~ "Chicken feet in Thai sauce is a super delicious snack with the sour, "
+#~ "spicy taste of the sauce mixed with deliciously crispy chicken feet."
+#~ msgstr ""
+#~ "Chân gà sốt Thái là món ăn nhẹ ngon tuyệt vời với hương vị chua cay của "
+#~ "sốt hòa quyện với chân gà giòn thơm."
+
+#~ msgid "French Fries"
+#~ msgstr "Khoai Tây Chiên"
+
+#~ msgid ""
+#~ "Prepared by cutting potatoes into even strips, drying them and frying "
+#~ "them in a deep fryer."
+#~ msgstr ""
+#~ "Chuẩn bị bằng cách cắt khoai tây thành từng thanh đều, sấy khô và chiên "
+#~ "trong nồi chảo sâu."
+
+#~ msgid "Chinese Sausage"
+#~ msgstr "Lạp Xưởng"
+
+#~ msgid ""
+#~ "The southern flavor of Chinese sausage is commonly known by its Cantonese "
+#~ "name lap cheong."
+#~ msgstr ""
+#~ "Hương vị phương Nam của lạp xưởng Trung Quốc thường được biết đến bằng "
+#~ "tên gọi tiếng Quảng Đông là 'lạp xưởng'."
+
+#~ msgid "Fried Squid"
+#~ msgstr "Mực Chiên Giòn"
+
+#~ msgid ""
+#~ "Fried calamari is one of the most classic appetizers made of lightly "
+#~ "battered rings of squid quickly fried and served with a marinara sauce."
+#~ msgstr ""
+#~ "Mực chiên giòn là một trong những món khai vị cổ điển nhất, được làm từ "
+#~ "những vòng mực bọc bột nhẹ, nhanh chóng chiên và thường được phục vụ kèm "
+#~ "sốt marinara."
+
+#~ msgid "Lumpia Goreng"
+#~ msgstr "Chả Giò Indo"
+
+#~ msgid ""
+#~ "Lumpia goreng is a simple Indonesian fried spring roll filled with "
+#~ "vegetables. The spring roll wrappers are filled with chopped, matchstick-"
+#~ "sized carrots, shredded cabbage, and sometimes mushrooms."
+#~ msgstr ""
+#~ "Chả giò Indonesia là một loại bánh quyện chiên ngon và đơn giản, được làm "
+#~ "từ bánh tráng cuốn và nhân bên trong bao gồm cà rốt băm nhỏ, cải bắp băm "
+#~ "mỏng và đôi khi còn có nấm."
+
+#~ msgid "Sausage"
+#~ msgstr "Lạp Xưởng"
+
+#~ msgid ""
+#~ "A sausage is a type of meat product usually made from ground meat—often "
+#~ "pork, beef, or poultry—along with salt, spices and other flavourings."
+#~ msgstr ""
+#~ "Lạp xưởng là một loại sản phẩm từ thịt thường được làm từ thịt băm - "
+#~ "thường là thịt lợn, bò hoặc gia cầm - kèm theo muối, gia vị và các hương "
+#~ "liệu khác."
+
+#~ msgid "Black Sugar Pearl Milk Tea"
+#~ msgstr "Trà Sữa Chân Trâu Đường Đen"
+
+#~ msgid ""
+#~ "This drink is made from 3 ingredients, tapioca pearls, caramelised brown "
+#~ "sugar and milk. It is the favorite drink of today's youth."
+#~ msgstr ""
+#~ "Đồ uống này được làm từ 3 thành phần: ngọc trai sắn, đường đen caramel và "
+#~ "sữa. Đây là thức uống yêu thích của giới trẻ ngày nay."
+
+#~ msgid "Melon Milk Tea"
+#~ msgstr "Trà Sữa Dưa Lưới"
+
+#~ msgid ""
+#~ "Melon milk tea is a combination of the aromatic flavor of milk and the "
+#~ "freshness of melon, bringing a wonderful experience."
+#~ msgstr ""
+#~ "Trà sữa dưa lưới là sự kết hợp giữa hương vị thơm ngon của sữa và sự tươi "
+#~ "mát của dưa lưới, mang đến một trải nghiệm tuyệt vời."
+
+#~ msgid "Golden Milk Tea"
+#~ msgstr "Trà Sữa Hoàng Kim"
+
+#~ msgid ""
+#~ "As one of the hot topping dishes today, milk tea with golden pearls, in "
+#~ "addition to its irresistible delicious taste, also brings a sense of "
+#~ "elegance and beauty."
+#~ msgstr ""
+#~ "Là một trong những món trà sữa phổ biến ngày nay, trà sữa với chân trâu "
+#~ "hoàng kim, ngoài hương vị ngon khó cưỡng, còn mang lại một cảm giác thanh "
+#~ "lịch và đẹp mắt."
+
+#~ msgid "HyNiu Milk Tea"
+#~ msgstr "Trà Sữa HyNiu"
+
+#~ msgid ""
+#~ "HyNiu milk tea is one of the restaurant's most passionate dishes, with a "
+#~ "secret combination of ingredients that has been thoroughly researched and "
+#~ "tested, this drink brings a wonderful experience to both taste and sight."
+#~ msgstr ""
+#~ "Trà sữa HyNiu là một trong những món ăn đặc biệt của nhà hàng, với sự kết "
+#~ "hợp bí mật của các thành phần đã được nghiên cứu và thử nghiệm kỹ lưỡng, "
+#~ "đồ uống này mang lại một trải nghiệm tuyệt vời cả về hương vị và thị giác."
+
+#~ msgid "Green Apple Milk Tea"
+#~ msgstr "Trà Sữa Táo Xanh"
+
+#~ msgid ""
+#~ "Our Green Apple Green Tea tastes like a luscious apple with hints of "
+#~ "caramel. Luxury Ingredients: Green tea, Apple pieces, Tamarind leaves, "
+#~ "Natural flavors. Made with all natural flavorings."
+#~ msgstr ""
+#~ "Trà sữa táo xanh của chúng tôi có hương vị giống như táo ngon với gợi ý "
+#~ "của karamen. Thành phần xa xỉ: Trà xanh, miếng táo, lá me, hương liệu tự "
+#~ "nhiên. Được làm với tất cả hương liệu tự nhiên."
+
+#~ msgid "Chocolate Milk Tea"
+#~ msgstr "Trà sữa Sô Cô La"
+
+#~ msgid ""
+#~ "Rich in cocoa flavor with a taste of black tea, this makes it an ultimate "
+#~ "comfort drink for customers."
+#~ msgstr ""
+#~ "Với hương vị cacao đậm đà kết hợp với hương vị trà đen, đây là thức uống "
+#~ "thúc đẩy sự thoải mái tối ưu cho khách hàng."
+
+#~ msgid "Pepsi"
+#~ msgstr "Pepsi"
+
+#~ msgid ""
+#~ "Pepsi is a popular carbonated beverage that many people eat every time."
+#~ msgstr "Pepsi là một thức uống có ga phổ biến mà nhiều người thích."
+
+#~ msgid "Lemon Soda"
+#~ msgstr "Soda Chanh"
+
+#~ msgid ""
+#~ "This Lemon Soda has three basic ingredients and is the perfect balance of "
+#~ "sweet, tart, and bubbly. It has the perfect level of sweetness, allowing "
+#~ "the lemon flavor to shine through. If you love lemon or citrus drinks "
+#~ "then you'll love this soda."
+#~ msgstr ""
+#~ "Soda chanh này có ba thành phần cơ bản và là sự kết hợp hoàn hảo giữa "
+#~ "hương vị ngọt ngào, chua chát và sủi bọt. Nó có độ ngọt hoàn hảo, cho "
+#~ "phép hương vị chanh tỏa sáng. Nếu bạn yêu thích đồ uống chanh hoặc có "
+#~ "hương vị chanh, thì bạn sẽ thích soda này."
+
+#~ msgid "Mint Soda"
+#~ msgstr "Soda Bạc Hà"
+
+#~ msgid ""
+#~ "With its refreshing and fragrant flavor, mint is a welcome addition to "
+#~ "both sweet and savory dishes."
+#~ msgstr ""
+#~ "Với hương vị tươi mát và thơm ngon, bạc hà là một sự bổ sung đáng chào "
+#~ "đón cho cả món ngọt và món mặn."
+
+#~ msgid "Strawberry Soda"
+#~ msgstr "Soda Dâu"
+
+#~ msgid ""
+#~ "It's delicious in its own unique way! If a soda could taste “fresh,” this "
+#~ "would be it."
+#~ msgstr ""
+#~ "Nó ngon theo cách độc đáo của riêng nó! Nếu soda có thể có hương vị 'tươi "
+#~ "mát', thì đây chính là loại soda đó."
+
+#~ msgid "Galaxy HyNiu"
+#~ msgstr "Galaxy HyNiu"
+
+#~ msgid ""
+#~ "Cool soda with exclusive HyNiu flavor, we believe this drink will give "
+#~ "you a completely new experience of soda drinks."
+#~ msgstr ""
+#~ "Soda mát lạnh với hương vị độc quyền của HyNiu, chúng tôi tin rằng đồ "
+#~ "uống này sẽ mang lại cho bạn một trải nghiệm hoàn toàn mới về đồ uống "
+#~ "soda."
+
+#~ msgid "Blueberry Soda"
+#~ msgstr "Soda Việt Quất"
+
+#~ msgid ""
+#~ "Blueberries are a very popular fruit because of their delicious taste and "
+#~ "many health benefits. Blueberry soda with the sweet and sour taste of "
+#~ "blueberries, with cool soda,..."
+#~ msgstr ""
+#~ "Việt quất là một loại trái cây rất phổ biến vì hương vị ngon và nhiều lợi "
+#~ "ích cho sức khỏe. Soda việt quất với hương vị ngọt chua của việt quất, "
+#~ "kết hợp với soda mát,..."
+
+#~ msgid "Kumquat And Aloe Vera Tea"
+#~ msgstr "Trà Bưởi Và Lô Hội"
+
+#~ msgid ""
+#~ "A refreshing and nourishing beverage made from the gel extracted from the "
+#~ "aloe vera plant. It offers a range of potential health benefits."
+#~ msgstr ""
+#~ "Một thức uống mát lạnh và bổ dưỡng được làm từ gel chiết xuất từ cây lô "
+#~ "hội. Nó mang lại nhiều lợi ích cho sức khỏe tiềm năng."
+
+#~ msgid "Beef Hamburger"
+#~ msgstr "Hamburger Bò"
+
+#~ msgid ""
+#~ "The best burgers offer a combination of tastes and textures – sweet, "
+#~ "sour, salt – with a bit of crunch."
+#~ msgstr ""
+#~ "Những chiếc bánh mì kẹp thịt ngon nhất mang đến sự kết hợp giữa hương vị "
+#~ "và kết cấu – ngọt, chua, muối – với một chút giòn."
+
+#~ msgid "Chicken Hamburgers"
+#~ msgstr "Hamburger Gà"
+
+#~ msgid ""
+#~ "Chicken burgers are healthier than regular burgers. They're made with "
+#~ "lean meat and most vegetables, so they're packed with nutrients and "
+#~ "haven't got any added sugar or fat. Plus, they taste great! Second of "
+#~ "all, chicken burgers are versatile."
+#~ msgstr ""
+#~ "Bánh mì kẹp thịt gà tốt cho sức khỏe hơn bánh mì kẹp thịt thông thường. "
+#~ "Chúng được làm từ thịt nạc và hầu hết các loại rau, vì vậy chúng chứa "
+#~ "nhiều chất dinh dưỡng và không thêm đường hoặc chất béo. Thêm vào đó, "
+#~ "chúng có hương vị tuyệt vời! Thứ hai, bánh mì kẹp thịt gà rất đa dạng."
+
+#~ msgid "Bamboo Charcoal Hamburger"
+#~ msgstr "Hamburger Than Tre"
+
+#~ msgid ""
+#~ "If you can get past the shocking color, it's not bad. The black pepper in "
+#~ "the patty hits you at the first bite and complements the tangy sauce, "
+#~ "with its hint of squid ink."
+#~ msgstr ""
+#~ "Nếu bạn có thể vượt qua được màu sắc gây sốc thì cũng không tệ. Hạt tiêu "
+#~ "đen trong miếng chả sẽ cuốn hút bạn ngay từ miếng đầu tiên và hòa quyện "
+#~ "với nước sốt thơm, thoang thoảng mùi mực ống."
+
+#~ msgid "3-Layer Mixed Hamburger"
+#~ msgstr "Hamburger Thập Cẩm 3 Tầng"
+
+#~ msgid ""
+#~ "The 3-layer mixed hamburger is a combination of beef, chicken and shrimp "
+#~ "hamburgers, with each layer having 1 filling, that combination creates an "
+#~ "unforgettable hamburger flavor."
+#~ msgstr ""
+#~ "Hamburger thập cẩm 3 tầng là sự kết hợp giữa hamburger bò, gà và tôm, mỗi "
+#~ "lớp có 1 nhân, sự kết hợp đó tạo nên hương vị hamburger khó quên."
+
+#~ msgid "Shrimp Hamburger"
+#~ msgstr "Hamburger Tôm"
+
+#~ msgid ""
+#~ "Shrimp burgers are also just inherently delicious, with a springy texture "
+#~ "that bursts with mildly sweet, irresistible umami flavor."
+#~ msgstr ""
+#~ "Bánh mì kẹp thịt tôm vốn dĩ đã rất ngon, với kết cấu dẻo dai hòa cùng "
+#~ "hương vị umami ngọt nhẹ, khó cưỡng."
+
+#~ msgid "3 Person Combo"
+#~ msgstr "Combo 3 Người"
+
+#~ msgid ""
+#~ "Combo includes 2 crispy fried chicken thighs, 2 chicken pieces, 2 cans of "
+#~ "Pepsi, and 2 apple pies - special dish only available when purchasing "
+#~ "combo."
+#~ msgstr ""
+#~ "Combo gồm 2 đùi gà chiên giòn, 2 miếng gà, 2 lon Pepsi và 2 bánh táo - "
+#~ "món ăn đặc biệt chỉ có khi mua combo."
+
+#~ msgid "6 Delicious Fried Chicken highs Combo"
+#~ msgstr "Combo 6 đùi gà chiên thơm ngon"
+
+#~ msgid "Combo includes 6 delicious fried chicken thighs"
+#~ msgstr "Combo gồm 6 đùi gà chiên thơm ngon"
+
+#~ msgid "Hamburger Fried Chicken Combo"
+#~ msgstr "Combo Hamburger Gà Chiên"
+
+#~ msgid ""
+#~ "Combo includes 1 delicious fried chicken thigh, 1 can of Pepsi and 1 "
+#~ "chicken/beef/shrimp hamburger."
+#~ msgstr ""
+#~ "Combo bao gồm 1 đùi gà rán thơm ngon, 1 lon Pepsi và 1 hamburger gà/bò/"
+#~ "tôm."
+
+#~ msgid "Combo For 1 Person"
+#~ msgstr "Combo 1 Người"
+
+#~ msgid ""
+#~ "combo for 1 person, combo includes 1 chicken thigh, 1 piece of fried "
+#~ "chicken, 1 can of Pepsi, and 2 apple pies - special dish only available "
+#~ "when purchasing combo"
+#~ msgstr ""
+#~ "Combo dành cho 1 người, combo gồm 1 đùi gà, 1 miếng gà rán, 1 lon Pepsi "
+#~ "và 2 bánh táo - món ăn đặc biệt chỉ có khi mua combo"
+
+#~ msgid "Super Ultra Big Flat Winnowing Basket"
+#~ msgstr "Mẹt Khổng Lồ"
+
+#~ msgid ""
+#~ "Including dishes such as fish balls, sausages, shrimp balls, lap mill,..."
+#~ msgstr "Gồm các món như cá viên, xúc xích, tôm viên, lạp xưởng,..."
+
+#~ msgid "HyNiu Super Ultra Combo"
+#~ msgstr "Combo Siêu Siêu HyNiu"
+
+#~ msgid ""
+#~ "Exclusive combo dishes researched and created by our restaurant, we "
+#~ "guarantee you will have an unforgettable experience with unique but "
+#~ "delicious flavors."
+#~ msgstr ""
+#~ "Các món combo độc quyền được nghiên cứu và sáng tạo bởi nhà hàng chúng "
+#~ "tôi, chúng tôi đảm bảo bạn sẽ có những trải nghiệm khó quên với hương vị "
+#~ "độc đáo nhưng thơm ngon."
+
+#~ msgid "Accepted-Ongoing"
+#~ msgstr "Shop đã nhận đơn"

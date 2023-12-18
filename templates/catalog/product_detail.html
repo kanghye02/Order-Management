@@ -1,0 +1,99 @@
+{% extends 'homepage/base.html'%}
+{% load i18n %}
+{% load static %}
+{%load djmoney%}
+{% money_localize money on %}
+
+{% block content %}
+<section class="product-detail">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="{{ product.image.url }}" alt="{{ product.name }}" class="menu-product-detail-image">
+            </div>
+            <div class="col-md-6">
+                <h1 class="text-dark">{% trans product.name %}</h1>
+                <h5 class="text-dark">{% trans product.description %}</h5>
+                <p class="text-dark font-weight-bold">{% trans "Sold" %}: {{ product.sold_number }}</p>
+                <div class="text-dark">
+                    {% trans "Price: " %}
+                    {% if promotion_status > 0 %}
+                        <span class="text-danger"><del>{% money_localize product.base_price 'VND' %}</del></span>  &emsp;
+                        <span class="text-dark">{% money_localize promo_price 'VND' %}</span>
+                    {% else %}
+                        <span class="text-dark">{% money_localize product.base_price 'VND' %}</span>
+                    {% endif %}
+                </div> <br>
+                <form method="post" action="{% url 'home:add_to_cart_detail' product.id %}">
+                <div id="dataa"  data-url="{% url 'home:update_cart'  %}" data-csrf="{{ csrf_token }}">
+                    {% csrf_token %} 
+                        <input type="number" name="quantity" min=1 id="quantity_{{cart.id}}" class="number-product-detail" ></input> <p class="font-weight-bold text-dark"> <br>Number In Cart: {{cart_item_quantity}}</p>
+                </div> <br>
+
+                <button type="submit" href="{% url 'home:add_to_cart_detail' product.id %}" class="btn btn-primary add-to-cart bg-warning">
+                    <i class="fa fa-shopping-cart " aria-hidden="true"></i> {% trans "Add to Cart" %}
+                </button>
+            </form>
+    <br>
+</div>
+<div class="div-review">
+{% if request.user.is_authenticated %}
+<br> <br> <br>
+<div class="add-review review-review">
+    <h3>{% trans "Add a Review" %}</h3>
+    <form method="post" action="" class="review-form">
+        {% csrf_token %}
+        
+        <div class="form-group">
+            <label for="{{ review_form.rating.id_for_label }}">{% trans "Rating:" %} &emsp;</label>
+            <input class="border-rating" type="number" name="{{ review_form.rating.name }}" id="{{ review_form.rating.id_for_label }}"
+            min="1" max="5" step="1" required>        </div>
+        <div class="form-group">
+            <label for="{{ review_form.comment.id_for_label }}">{% trans "Review:" %} &emsp;</label>
+            {{ review_form.comment }}
+        </div>
+
+        <button type="submit" class="submit-button">{% trans "Submit Review" %}</button>
+    </form>
+</div>
+        {% else %}
+        <br> <br> <br>
+        <div class="add-review review-review">
+            <h3>{% trans "Add a Review" %}</h3>
+            <form method="post" action="" class="review-form">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label>{% trans "Rating:" %} &emsp;</label>
+                    <input class="border-rating" type="number" name="{{ review_form.rating.name }}" id="{{ review_form.rating.id_for_label }}"
+                    min="1" max="5" step="1" required>        </div>
+                <div class="form-group">
+                    <label>{% trans "Review:" %} &emsp;</label>
+                    <input class="border-rating" type="text" placeholder='{% trans "Login To Add Review" %}'>
+                </div>
+        
+                <a href="{% url 'login' %}" class="submit-button searchbox">{% trans "Submit Review" %}</a>
+            </form>
+        </div>
+        {% endif %}
+        
+        <div class="product-reviews float-right view-review">
+           <h3>{% trans "Product Reviews" %}</h3>
+            <ul >
+                {% for review in reviews %}
+                    <li class="review-item">
+                        <div class="review-header fa fa-user-circle-o">
+                            <strong>{{ review.user.username }}:</strong>
+                            <span class="rating font-italic">{% trans "Rating:" %} {{ review.rating }}/5</span>
+                        </div>
+                        <div class="review-comment">{% trans "Review:" %} {{ review.comment }}</div>
+                    </li>
+                {% empty %}
+                    <li class="no-reviews">{% trans "No reviews yet." %}</li>
+                {% endfor %}
+            </ul>
+        </div>
+</div>
+</div>
+    </div>
+</section>
+{% endblock %}

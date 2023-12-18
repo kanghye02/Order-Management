@@ -1,0 +1,57 @@
+{% extends 'admin/home.html'%}
+{% load static %}
+{% load i18n %}
+
+{% block content %}
+<section class="slider_section ">
+    <div class="container ">
+        <div class="login-container">
+        <form method="post">
+        {% csrf_token %}
+            <h1>{% trans "Create New User" %}</h1>
+            {% if form.errors %}
+                <strong><p class="text-danger text-center">{% trans "There was an error with your submission:" %}</p></strong>
+                {% for field, errors in form.errors.items %}
+                    {% for error in errors %}
+                    <strong><li class="text-danger text_left">{{ error }}</li></strong><br>
+                    {% endfor %}
+                {% endfor %}
+            {% endif %}
+            <table class="table">
+                {% for field in form %}
+                    {% if field.name != "csrfmiddlewaretoken" %}
+                        <tr>
+                            <td class="table-col-text-left">
+                                <label for="{{ field.id_for_label }}" class="col-form-label">
+                                    <div class="white-label">
+                                        {% if field.label == "Password confirmation" %}
+                                            {% trans "Pass Confirm:" %}
+                                        {% else %}
+                                            {% trans field.label %}:
+                                        {% endif %}
+                                    </div>
+                                </label>
+                            </td>
+                            <td>
+                                <div class="input-group">
+                                    <input  type="{{ field.field.widget.input_type }}"
+                                            class="form-control"
+                                            name="{{ field.name }}"
+                                            id="{{ field.id_for_label }}"
+                                            value="{{ field.value|default:''}}">
+                                </div>
+                            </td>
+                        </tr>
+                    {% endif %}
+                {% endfor %}
+            </table>        
+            <button type="submit" class="btn btn-success">{% trans "Create user" %}</button>
+        </form>
+        <p class="mb-0">--------or--------</p>
+        <form method="get" action="{% url 'home:admin_user_list' %}">
+            <button type="submit" class="btn btn-secondary">{% trans "Return user list" %}</button>
+        </form>
+        </div>
+    </div>
+</section>
+{% endblock %}

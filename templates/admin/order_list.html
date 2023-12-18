@@ -1,0 +1,104 @@
+{% extends 'admin/home.html'%}
+{% load static %}
+{% load i18n %}
+{%load djmoney%}
+{% money_localize money on}
+
+{% block content %}
+<div class="orderlist-container">
+    <div class="filter-sidebar">
+        <!-- Thêm bộ lọc ở đây -->
+        <h2>{%trans "Filter" %}</h2>
+    
+        <div class="filter-item">
+            <label for="start-date">{%trans "Start Date" %}:</label>
+            <input type="text" class="filter-date" id="start-date" pattern="\d{2}/\d{2}/\d{4}" placeholder="dd/mm/yyyy">
+        </div>
+        
+        <div class="filter-item">
+            <label for="end-date">{%trans "End Date" %}:</label>
+            <input type="text" class="filter-date" id="end-date" pattern="\d{2}/\d{2}/\d{4}" placeholder="dd/mm/yyyy">
+        </div>
+    
+        <div class="filter-item">
+            <label for="price-filter">{%trans "Price Range" %}:</label>
+            <input type="number" class="filter-price" id="min-price" placeholder="{% trans 'Min price' %}">
+            <input type="number" class="filter-price" id="max-price" placeholder="{% trans 'Max price' %}">
+        </div>
+    
+        <div class="filter-buttons">
+            <button id="refresh-filter">{%trans "Refresh" %}</button>
+            <button id="apply-filter">{%trans "Apply" %}</button>
+        </div>
+    </div>
+
+    <div class="order-list">
+        <span>
+            <div class="orderlist-navbar">
+                <a href="?status=all">{%trans "All" %}</a>
+                <a href="?status=pending">{%trans "Pending" %}</a>
+                <a href="?status=ongoing">{%trans "Ongoing" %}</a>
+                <a href="?status=cancelled">{%trans "Cancelled" %}</a>
+                <a href="?status=rejected">{%trans "Rejected" %}</a>
+                <a href="?status=completed">{%trans "Completed" %}</a>
+            </div>
+        </span>
+        {% for orderAll in orderAllItem %}
+            {% if request.GET.status == 'all' or orderAll.order.get_status_display|lower == request.GET.status|lower %}
+            <div class="order-details">
+                <div class="line-container big-text">
+                    <span class="left">{%trans "Customer" %}: {{ orderAll.order.user.first_name }} {{ orderAll.order.user.last_name }}</span>
+                    <span class="right">{%trans "Status" %}: {% trans orderAll.order.get_status_display %}</span>
+                </div>
+            
+                <table class="table-orderdetail">
+                    {% for order_detail in orderAll.allItem %}
+                    <tr>
+                        <td class="image-cell"><img src="{{ order_detail.product.image.url }}" alt="{{ order_detail.product.name }}"></td>
+                        <td>{{ order_detail.product.name }}</td>
+                        <td>
+                            x{{ order_detail.quantity }}
+                            {% if orderAll.order.status == 0 and order_detail.product.number_in_stock < order_detail.quantity %}
+                            (không đủ trong kho)
+                            {% endif %}
+                        </td>
+                        <td>{% money_localize order_detail.price 'VND' %}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+            
+                <div class="line-container big-text">
+                    <span class="cus-left" data-formatted-date="{{ orderAll.formatted_date }}">{%trans "Order Date" %}: {{ orderAll.formatted_date }}</span>
+                    <span class="cus-right" data-total-price="{{ orderAll.total_price }}">{%trans "Total Cost" %}: {% money_localize orderAll.total_price 'VND' %}</span>
+                </div>
+
+                <table class="button-cus-container">
+                    <tr>
+                        <td>
+                            {% if orderAll.order.status == 2 or orderAll.order.status == 3 or orderAll.order.status == 4 %}
+                            <a href="{% url 'home:admin_delete_order' orderAll.order.id %}" class="btn btn-warning">{%trans "Delete" %}</a>
+                            {% endif %}
+                        </td>
+                        <td>
+                            {% if orderAll.order.status == 0 %}
+                            <a href="{% url 'home:admin_reject_order' orderAll.order.id %}" class="btn btn-danger">{% trans "Reject" %}</a>
+                            {% else %}
+                            <a class="btn btn-custom" readonly>{% trans "Reject" %}</a>
+                            {% endif %}
+                        </td>    
+                        <td>
+                            {% if orderAll.order.status == 0 %}
+                            <a href="{% url 'home:admin_accept_order' orderAll.order.id %}" class="btn btn-success">{% trans "Accept" %}</a>
+                            {% else %}
+                            <a class="btn btn-custom" readonly>{% trans "Accept" %}</a>
+                            {% endif %}
+                        </td>
+                    </tr>
+                </table>
+            
+            </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
