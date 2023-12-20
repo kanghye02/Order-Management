@@ -30,7 +30,7 @@ SECRET_KEY = 'django-insecure-bwgi^0)yqpj--5_l6un=+25+6_3paw7i8zj7cu4e0z$i9&tpf9
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['192.168.1.11']
 
 
 # Application definition
@@ -44,11 +44,14 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'djmoney',
     'home',
+    'corsheaders',
+    'sslserver',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -149,3 +152,5 @@ STATICFILES_DIRS = [
 
 LOGIN_REDIRECT_URL = '/'
 USE_TZ = False
+
+CORS_ALLOW_ALL_ORIGINS = True

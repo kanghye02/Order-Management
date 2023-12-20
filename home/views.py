@@ -1,4 +1,8 @@
 import datetime
+import qrcode
+import base64
+from io import BytesIO
+from .models import QRCode
 from django.views import View, generic
 from django.http import JsonResponse, HttpResponseRedirect, HttpResponse
 from django.urls import reverse
@@ -8,7 +12,7 @@ from django.contrib import messages
 from django.utils.translation import gettext_lazy as _
 from .models import Category, Product, Cart, CartItem, CustomUser, Order, OrderDetail, Promotion
 from .forms import CustomUserForm, RegistrationForm, CategoryForm, ProductForm, DeleteCategoryForm
-from django.contrib.auth import logout
+from django.contrib.auth import authenticate, login, logout
 from django.contrib.admin.views.decorators import staff_member_required
 from django.db import transaction
 from django.utils import timezone
@@ -82,8 +86,25 @@ def update_profile(request):
     return render(request, 'registration/profile.html', {'form': form})
 
 def custom_logout(request):
+    user = request.user
+    if user.is_authenticated:
+        # Phân tích tên người dùng để lấy số bàn
+        table_number = extract_table_number_from_username(user.username)
+
+        # Cập nhật trạng thái is_active của mã QR
+        if table_number:
+            create_or_update_qr_code(table_number, is_active=True)
+
     logout(request)
     return redirect('login')
+
+def extract_table_number_from_username(username):
+    # Giả sử tên người dùng có dạng "Table_X", lấy phần số và chuyển đổi nó thành số nguyên
+    try:
+        table_number = int(username.split('_')[-1])
+        return table_number
+    except (IndexError, ValueError):
+        return None
 
 def register(request):
     if request.method == 'POST':
@@ -653,3 +674,72 @@ def add_to_cart_detail(request, product_id):
             cart_item.save()
 
     return redirect('home:menu_product_detail', product_id=product_id)
+
+#view dành cho qr code
+
+def create_qr_code_base64(table_number):
+    content = f"http://192.168.1.11:8000/login_qr?table={table_number}"
+    print("QR Content:", content)  # Thêm dòng này để kiểm tra nội dung URL
+
+    # Tạo QR code
+    qr = qrcode.QRCode(
+        version=1,
+        error_correction=qrcode.constants.ERROR_CORRECT_L,
+        box_size=10,
+        border=4,
+    )
+    qr.add_data(content)
+    qr.make(fit=True)
+    img = qr.make_image(fill_color="black", back_color="white")
+
+    # Chuyển đổi hình ảnh thành chuỗi base64
+    buffered = BytesIO()
+    img.save(buffered, format="PNG")
+    img_str = base64.b64encode(buffered.getvalue()).decode()
+
+    # Trả về chuỗi base64
+    return img_str
+
+def create_or_update_qr_code(table_number, is_active=True):
+    qr_code_data = create_qr_code_base64(table_number)
+
+    # Cập nhật hoặc tạo mới đối tượng QRCode trong cơ sở dữ liệu
+    qr_code, _ = QRCode.objects.update_or_create(
+        table_number=table_number,
+        defaults={'qr_code_data': qr_code_data, 'is_active': is_active}
+    )
+
+    return qr_code
+
+
+def table_view(request, table_number):
+    try:
+        qr_code = QRCode.objects.get(table_number=table_number)
+        qr_code_data = qr_code.qr_code_data
+        is_active = qr_code.is_active
+    except QRCode.DoesNotExist:
+        # Tạo mã QR mới nếu chưa tồn tại
+        qr_code_data = create_or_update_qr_code(table_number)
+        is_active = True
+
+    return render(request, 'table_page.html', {'qr_code': qr_code_data, 'is_active': is_active, 'table_number': table_number})
+
+def login_from_qr(request):
+    table_number = request.GET.get('table')
+    username = f"Table_{table_number}"
+    password = "Huy2002@"  # Thay thế với cách lấy password an toàn hơn nếu cần
+    user = authenticate(request, username=username, password=password)
+    create_or_update_qr_code(table_number, is_active=False)
+    if user is not None:
+        login(request, user)
+        return redirect('home:category')  # Chuyển hướng về trang chủ
+    else:
+        # Xử lý trường hợp không đăng nhập được
+        return redirect('login')  # Chuyển hướng đến trang đăng nhập
+
+def check_qr_status(request, table_number):
+    try:
+        qr_code = QRCode.objects.get(table_number=table_number)
+        return JsonResponse({'is_active': qr_code.is_active})
+    except QRCode.DoesNotExist:
+        return JsonResponse({'is_active': False})
