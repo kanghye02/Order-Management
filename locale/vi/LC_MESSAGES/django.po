@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-17 23:24+0700\n"
+"POT-Creation-Date: 2023-12-18 22:12+0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -90,24 +90,24 @@ msgstr "Sản phẩm bán chạy"
 msgid "Brief description of the promotion."
 msgstr "Mô tả ngắn gọn về khuyến mãi."
 
-#: .\home\views.py:76 .\home\views.py:221 .\home\views.py:288
-#: .\home\views.py:440
+#: .\home\views.py:80 .\home\views.py:225 .\home\views.py:292
+#: .\home\views.py:444
 msgid "Changes saved"
 msgstr "Thay đổi đã lưu"
 
-#: .\home\views.py:489 .\home\views.py:499 .\home\views.py:512
+#: .\home\views.py:493 .\home\views.py:503 .\home\views.py:516
 msgid "Đơn đặt hàng không tồn tại"
 msgstr ""
 
-#: .\home\views.py:509
+#: .\home\views.py:513
 msgid "Không thể xóa đơn đặt hàng với trạng thái này"
 msgstr ""
 
-#: .\shop\settings.py:121
+#: .\shop\settings.py:124
 msgid "VI"
 msgstr "VI"
 
-#: .\shop\settings.py:122
+#: .\shop\settings.py:125
 msgid "EN"
 msgstr "EN"
 
@@ -554,12 +554,6 @@ msgstr ""
 "Thông tin của bạn chưa hoàn thiện, hãy cập nhật thông tin ở tài khoản cá "
 "nhân trước khi đặt hàng!!!"
 
-#: .\templates\catalog\product_detail.html:19
-#, fuzzy
-#| msgid "Price"
-msgid "Price: "
-msgstr "Giá"
-
 #: .\templates\catalog\product_detail.html:34
 msgid "Add to Cart"
 msgstr "Thêm vào Giỏ hàng"
@@ -589,12 +583,6 @@ msgstr "Gửi Đánh giá"
 #: .\templates\catalog\product_detail.html:71
 msgid "Login To Add Review"
 msgstr "Đăng Nhập Để Đánh Giá"
-
-#: .\templates\catalog\product_detail.html:80
-#, fuzzy
-#| msgid "Product image"
-msgid "Product Reviews"
-msgstr "URL của hình ảnh sản phẩm."
 
 #: .\templates\catalog\product_detail.html:91
 msgid "No reviews yet."
@@ -715,534 +703,534 @@ msgstr "Đã có tài khoản? "
 msgid "Login here!"
 msgstr "Đăng nhập ở đây!"
 
-#~ msgid "Call Liu: +84 394188326"
-#~ msgstr "Gọi Liu: +84 394188326"
-
-#~ msgid "Your order has been cancelled!"
-#~ msgstr "Đơn hàng của bạn đã được hủy"
-
-#~ msgid "Cancel Order"
-#~ msgstr "Hủy đơn hàng"
+msgid "Call Liu: +84 394188326"
+msgstr "Gọi Liu: +84 394188326"
+
+msgid "Your order has been cancelled!"
+msgstr "Đơn hàng của bạn đã được hủy"
+
+msgid "Cancel Order"
+msgstr "Hủy đơn hàng"
 
-#~ msgid "Your order has been paid!"
-#~ msgstr "Đơn hàng của bạn đã được thanh toán!"
-
-#~ msgid "Order Date:"
-#~ msgstr "Thời Gian Đặt: "
-
-#~ msgid "User's Status:"
-#~ msgstr "Trạng Thái Đơn Hàng: "
-
-#~ msgid "Parent"
-#~ msgstr "Nhánh Cha"
-
-#~ msgid "Phone"
-#~ msgstr "SĐT"
-
-#~ msgid "Address"
-#~ msgstr "Địa Chỉ"
-
-#~ msgid "Milk Tea"
-#~ msgstr "Trà Sữa"
-
-#~ msgid "Snack"
-#~ msgstr "Đồ Ăn Nhẹ"
-
-#~ msgid "Soda"
-#~ msgstr "Nước Ngọt"
-
-#~ msgid "Coffee"
-#~ msgstr "Cà phê"
-
-#~ msgid "Fried Chicken"
-#~ msgstr "Gà Rán"
-
-#~ msgid "White coffee"
-#~ msgstr "Bạc Xỉu"
-
-#~ msgid ""
-#~ "white coffee is used to refer to regular black coffee that has had milk, "
-#~ "cream or some other whitener added to it"
-#~ msgstr ""
-#~ "Bạc Xỉu được dùng để chỉ cà phê đen thông thường được thêm sữa, kem vào "
-#~ "để tăng vị ngon, thơm ngậy."
-
-#~ msgid "Black Coffee"
-#~ msgstr "Cà phê đen"
-
-#~ msgid "Coffee served as a beverage without cream or milk."
-#~ msgstr "Cà phê được phục vụ như nguyên bản, không có kem hoặc sữa."
-
-#~ msgid "Egg coffee"
-#~ msgstr "Cà phê trứng"
-
-#~ msgid ""
-#~ "An egg coffee is a Vietnamese drink traditionally prepared with egg "
-#~ "yolks, sugar, condensed milk and robusta coffee."
-#~ msgstr ""
-#~ "Cà phê trứng là thức uống truyền thống của người Việt được pha chế với "
-#~ "lòng đỏ trứng, đường, sữa đặc và cà phê Robusta."
-
-#~ msgid "Capuchino"
-#~ msgstr "Capuchino"
-
-#~ msgid ""
-#~ "Variations of the drink involve the use of cream instead of milk, using "
-#~ "non-dairy milk substitutes and flavoring with cinnamon (in the United "
-#~ "States) or chocolate powder (in Europe)."
-#~ msgstr ""
-#~ "Các biến thể của đồ uống liên quan đến việc sử dụng kem thay vì sữa, sử "
-#~ "dụng các sản phẩm thay thế sữa không phải sữa và hương liệu với quế (ở "
-#~ "Hoa Kỳ) hoặc bột sô cô la (ở Châu Âu)."
-
-#~ msgid "Latte"
-#~ msgstr "Latte"
-
-#~ msgid ""
-#~ "A coffee drink of Italian origin made with espresso and steamed milk. "
-#~ "Variants include the chocolate-flavored mocha or replacing the coffee "
-#~ "with another beverage base such as masala chai (spiced Indian tea), mate, "
-#~ "matcha, turmeric or rooibos."
-#~ msgstr ""
-#~ "Một thức uống cà phê có nguồn gốc từ Ý được pha bằng espresso và sữa hấp. "
-#~ "Các biến thể bao gồm mocha có hương vị sô cô la hoặc thay thế cà phê bằng "
-#~ "một loại đồ uống khác như masala chai (trà gia vị Ấn Độ), mate, matcha, "
-#~ "nghệ hoặc rooibos."
-
-#~ msgid "Mushroom Chicken Pizza"
-#~ msgstr "Pizza Gà Nấm"
-
-#~ msgid ""
-#~ "Delicious pizza with roasted chicken, mushrooms, spinach, and homemade "
-#~ "kale pesto sauce. An easy, fun, and healthful pizza!"
-#~ msgstr ""
-#~ "Bánh pizza thơm ngon với thịt gà nướng, nấm, rau bina và sốt pesto cải "
-#~ "xoăn tự làm. Một chiếc bánh pizza dễ dàng, thú vị và tốt cho sức khỏe!"
-
-#~ msgid "Seafood Pizza"
-#~ msgstr "Pizza Hải Sản"
-
-#~ msgid ""
-#~ "Seafood pizza is pizza prepared with seafood as a primary ingredient."
-#~ msgstr ""
-#~ "Pizza hải sản là một loại pizza được làm với hải sản là thành phần chính."
-
-#~ msgid "Veggie Pizza"
-#~ msgstr "Pizza Rau Củ"
-
-#~ msgid ""
-#~ "This veggie pizza is made from crescent-roll dough and a cream cheesy "
-#~ "spread for an easy, fresh take on a favorite — packed with crunchy"
-#~ msgstr ""
-#~ "Pizza rau củ này được làm từ bột láng và một lớp kem phô mai mịn màng để "
-#~ "tạo ra một phiên bản mới dễ làm, tươi mát của món ăn ưa thích — đậy ắp vị "
-#~ "giòn."
-
-#~ msgid "Mixed Pizza"
-#~ msgstr "Pizza Thập Cẩm"
-
-#~ msgid ""
-#~ "Mixed pizza is a type of pizza that combines ingredients from many other "
-#~ "types of pizza such as seafood, vegetables, chicken, sausage..."
-#~ msgstr ""
-#~ "Pizza thập cẩm là một loại pizza kết hợp các thành phần từ nhiều loại "
-#~ "pizza khác nhau như hải sản, rau cải, gà, xúc xích..."
-
-#~ msgid "Sausage Pizza"
-#~ msgstr "Pizza Xúc Xích"
-
-#~ msgid ""
-#~ "Sausage pizza with the main ingredient being delicious sausages covered "
-#~ "with fatty cheese and a crispy crust."
-#~ msgstr ""
-#~ "Pizza xúc xích với thành phần chính là xúc xích thơm ngon được phủ bởi "
-#~ "lớp phô mai béo và lớp vỏ giòn."
-
-#~ msgid "Fried Chicken Wings"
-#~ msgstr "Cánh Gà Chiên"
-
-#~ msgid ""
-#~ "Crispy fried chicken wings with HyNiu's special recipe makes the chicken "
-#~ "wings delicious and crispy"
-#~ msgstr ""
-#~ "Cánh gà chiên giòn với công thức đặc biệt của HyNiu tạo nên hương vị ngon "
-#~ "và giòn."
-
-#~ msgid "Fried Chicken Thighs"
-#~ msgstr "Đùi Gà Chiên"
-
-#~ msgid ""
-#~ "Crispy fried chicken thighs with HyNiu's special recipe helps make the "
-#~ "chicken wings delicious and crispy"
-#~ msgstr ""
-#~ "Đùi gà chiên giòn với công thức đặc biệt của HyNiu giúp đùi gà ngon và "
-#~ "giòn."
-
-#~ msgid "Hyniu's Sauce Fried Chicken"
-#~ msgstr "Cánh Gà Chiên Sốt Hyniu"
-
-#~ msgid ""
-#~ "Crispy fried chicken with exclusive Hyniu sauce, sweet and spicy flavor, "
-#~ "our formula has been researched for 5 years to perfect, giving you a "
-#~ "wonderful experience."
-#~ msgstr ""
-#~ "Cánh gà chiên giòn với sốt Hyniu độc đáo, hương vị ngọt và cay, công thức "
-#~ "của chúng tôi đã được nghiên cứu trong 5 năm để hoàn thiện, mang đến cho "
-#~ "bạn trải nghiệm tuyệt vời."
-
-#~ msgid "Chicken Pieces"
-#~ msgstr "Gà Miếng"
-
-#~ msgid ""
-#~ "Never get tired of eating our crispy fried chicken breast, with HyNiu "
-#~ "restaurant's exclusive recipe and method."
-#~ msgstr ""
-#~ "Không bao giờ chán khi ăn miếng gà chiên giòn của chúng tôi, với công "
-#~ "thức và phương pháp độc quyền của nhà hàng HyNiu."
-
-#~ msgid "Cheese Chicken"
-#~ msgstr "Gà Phô Mai"
-
-#~ msgid ""
-#~ "Crispy fried chicken pieces combined with cheese sauce create a unique "
-#~ "yet appealing flavor"
-#~ msgstr ""
-#~ "Miếng gà chiên giòn kết hợp với sốt phô mai tạo nên hương vị độc đáo "
-#~ "nhưng hấp dẫn."
-
-#~ msgid "Sunflower Seed"
-#~ msgstr "Hạt Hướng Dương"
-
-#~ msgid ""
-#~ "Sunflower seeds are a source of many vitamins and minerals that can "
-#~ "support your immune system and increase your ability to fight off viruses."
-#~ msgstr ""
-#~ "Hạt hướng dương là nguồn cung cấp nhiều loại vitamin và khoáng chất có "
-#~ "thể hỗ trợ hệ miễn dịch và tăng khả năng chống lại vi khuẩn."
-
-#~ msgid "Coconut Flavored Sunflower Seeds"
-#~ msgstr "Hạt Hướng Dương Vị Dừa"
-
-#~ msgid "Sunflower seeds combine delicious coconut flavor"
-#~ msgstr "Hạt hướng dương kết hợp với hương vị dừa thơm ngon."
-
-#~ msgid "Chicken Feet With Super Spicy Thai Sauce"
-#~ msgstr "Chân Gà Sốt Thái Cực Cay"
-
-#~ msgid ""
-#~ "Chicken feet in Thai sauce is a super delicious snack with the sour, "
-#~ "spicy taste of the sauce mixed with deliciously crispy chicken feet."
-#~ msgstr ""
-#~ "Chân gà sốt Thái là món ăn nhẹ ngon tuyệt vời với hương vị chua cay của "
-#~ "sốt hòa quyện với chân gà giòn thơm."
-
-#~ msgid "French Fries"
-#~ msgstr "Khoai Tây Chiên"
-
-#~ msgid ""
-#~ "Prepared by cutting potatoes into even strips, drying them and frying "
-#~ "them in a deep fryer."
-#~ msgstr ""
-#~ "Chuẩn bị bằng cách cắt khoai tây thành từng thanh đều, sấy khô và chiên "
-#~ "trong nồi chảo sâu."
-
-#~ msgid "Chinese Sausage"
-#~ msgstr "Lạp Xưởng"
-
-#~ msgid ""
-#~ "The southern flavor of Chinese sausage is commonly known by its Cantonese "
-#~ "name lap cheong."
-#~ msgstr ""
-#~ "Hương vị phương Nam của lạp xưởng Trung Quốc thường được biết đến bằng "
-#~ "tên gọi tiếng Quảng Đông là 'lạp xưởng'."
-
-#~ msgid "Fried Squid"
-#~ msgstr "Mực Chiên Giòn"
-
-#~ msgid ""
-#~ "Fried calamari is one of the most classic appetizers made of lightly "
-#~ "battered rings of squid quickly fried and served with a marinara sauce."
-#~ msgstr ""
-#~ "Mực chiên giòn là một trong những món khai vị cổ điển nhất, được làm từ "
-#~ "những vòng mực bọc bột nhẹ, nhanh chóng chiên và thường được phục vụ kèm "
-#~ "sốt marinara."
-
-#~ msgid "Lumpia Goreng"
-#~ msgstr "Chả Giò Indo"
-
-#~ msgid ""
-#~ "Lumpia goreng is a simple Indonesian fried spring roll filled with "
-#~ "vegetables. The spring roll wrappers are filled with chopped, matchstick-"
-#~ "sized carrots, shredded cabbage, and sometimes mushrooms."
-#~ msgstr ""
-#~ "Chả giò Indonesia là một loại bánh quyện chiên ngon và đơn giản, được làm "
-#~ "từ bánh tráng cuốn và nhân bên trong bao gồm cà rốt băm nhỏ, cải bắp băm "
-#~ "mỏng và đôi khi còn có nấm."
-
-#~ msgid "Sausage"
-#~ msgstr "Lạp Xưởng"
-
-#~ msgid ""
-#~ "A sausage is a type of meat product usually made from ground meat—often "
-#~ "pork, beef, or poultry—along with salt, spices and other flavourings."
-#~ msgstr ""
-#~ "Lạp xưởng là một loại sản phẩm từ thịt thường được làm từ thịt băm - "
-#~ "thường là thịt lợn, bò hoặc gia cầm - kèm theo muối, gia vị và các hương "
-#~ "liệu khác."
-
-#~ msgid "Black Sugar Pearl Milk Tea"
-#~ msgstr "Trà Sữa Chân Trâu Đường Đen"
-
-#~ msgid ""
-#~ "This drink is made from 3 ingredients, tapioca pearls, caramelised brown "
-#~ "sugar and milk. It is the favorite drink of today's youth."
-#~ msgstr ""
-#~ "Đồ uống này được làm từ 3 thành phần: ngọc trai sắn, đường đen caramel và "
-#~ "sữa. Đây là thức uống yêu thích của giới trẻ ngày nay."
-
-#~ msgid "Melon Milk Tea"
-#~ msgstr "Trà Sữa Dưa Lưới"
-
-#~ msgid ""
-#~ "Melon milk tea is a combination of the aromatic flavor of milk and the "
-#~ "freshness of melon, bringing a wonderful experience."
-#~ msgstr ""
-#~ "Trà sữa dưa lưới là sự kết hợp giữa hương vị thơm ngon của sữa và sự tươi "
-#~ "mát của dưa lưới, mang đến một trải nghiệm tuyệt vời."
-
-#~ msgid "Golden Milk Tea"
-#~ msgstr "Trà Sữa Hoàng Kim"
-
-#~ msgid ""
-#~ "As one of the hot topping dishes today, milk tea with golden pearls, in "
-#~ "addition to its irresistible delicious taste, also brings a sense of "
-#~ "elegance and beauty."
-#~ msgstr ""
-#~ "Là một trong những món trà sữa phổ biến ngày nay, trà sữa với chân trâu "
-#~ "hoàng kim, ngoài hương vị ngon khó cưỡng, còn mang lại một cảm giác thanh "
-#~ "lịch và đẹp mắt."
-
-#~ msgid "HyNiu Milk Tea"
-#~ msgstr "Trà Sữa HyNiu"
-
-#~ msgid ""
-#~ "HyNiu milk tea is one of the restaurant's most passionate dishes, with a "
-#~ "secret combination of ingredients that has been thoroughly researched and "
-#~ "tested, this drink brings a wonderful experience to both taste and sight."
-#~ msgstr ""
-#~ "Trà sữa HyNiu là một trong những món ăn đặc biệt của nhà hàng, với sự kết "
-#~ "hợp bí mật của các thành phần đã được nghiên cứu và thử nghiệm kỹ lưỡng, "
-#~ "đồ uống này mang lại một trải nghiệm tuyệt vời cả về hương vị và thị giác."
-
-#~ msgid "Green Apple Milk Tea"
-#~ msgstr "Trà Sữa Táo Xanh"
-
-#~ msgid ""
-#~ "Our Green Apple Green Tea tastes like a luscious apple with hints of "
-#~ "caramel. Luxury Ingredients: Green tea, Apple pieces, Tamarind leaves, "
-#~ "Natural flavors. Made with all natural flavorings."
-#~ msgstr ""
-#~ "Trà sữa táo xanh của chúng tôi có hương vị giống như táo ngon với gợi ý "
-#~ "của karamen. Thành phần xa xỉ: Trà xanh, miếng táo, lá me, hương liệu tự "
-#~ "nhiên. Được làm với tất cả hương liệu tự nhiên."
-
-#~ msgid "Chocolate Milk Tea"
-#~ msgstr "Trà sữa Sô Cô La"
-
-#~ msgid ""
-#~ "Rich in cocoa flavor with a taste of black tea, this makes it an ultimate "
-#~ "comfort drink for customers."
-#~ msgstr ""
-#~ "Với hương vị cacao đậm đà kết hợp với hương vị trà đen, đây là thức uống "
-#~ "thúc đẩy sự thoải mái tối ưu cho khách hàng."
-
-#~ msgid "Pepsi"
-#~ msgstr "Pepsi"
-
-#~ msgid ""
-#~ "Pepsi is a popular carbonated beverage that many people eat every time."
-#~ msgstr "Pepsi là một thức uống có ga phổ biến mà nhiều người thích."
-
-#~ msgid "Lemon Soda"
-#~ msgstr "Soda Chanh"
-
-#~ msgid ""
-#~ "This Lemon Soda has three basic ingredients and is the perfect balance of "
-#~ "sweet, tart, and bubbly. It has the perfect level of sweetness, allowing "
-#~ "the lemon flavor to shine through. If you love lemon or citrus drinks "
-#~ "then you'll love this soda."
-#~ msgstr ""
-#~ "Soda chanh này có ba thành phần cơ bản và là sự kết hợp hoàn hảo giữa "
-#~ "hương vị ngọt ngào, chua chát và sủi bọt. Nó có độ ngọt hoàn hảo, cho "
-#~ "phép hương vị chanh tỏa sáng. Nếu bạn yêu thích đồ uống chanh hoặc có "
-#~ "hương vị chanh, thì bạn sẽ thích soda này."
-
-#~ msgid "Mint Soda"
-#~ msgstr "Soda Bạc Hà"
-
-#~ msgid ""
-#~ "With its refreshing and fragrant flavor, mint is a welcome addition to "
-#~ "both sweet and savory dishes."
-#~ msgstr ""
-#~ "Với hương vị tươi mát và thơm ngon, bạc hà là một sự bổ sung đáng chào "
-#~ "đón cho cả món ngọt và món mặn."
-
-#~ msgid "Strawberry Soda"
-#~ msgstr "Soda Dâu"
-
-#~ msgid ""
-#~ "It's delicious in its own unique way! If a soda could taste “fresh,” this "
-#~ "would be it."
-#~ msgstr ""
-#~ "Nó ngon theo cách độc đáo của riêng nó! Nếu soda có thể có hương vị 'tươi "
-#~ "mát', thì đây chính là loại soda đó."
-
-#~ msgid "Galaxy HyNiu"
-#~ msgstr "Galaxy HyNiu"
-
-#~ msgid ""
-#~ "Cool soda with exclusive HyNiu flavor, we believe this drink will give "
-#~ "you a completely new experience of soda drinks."
-#~ msgstr ""
-#~ "Soda mát lạnh với hương vị độc quyền của HyNiu, chúng tôi tin rằng đồ "
-#~ "uống này sẽ mang lại cho bạn một trải nghiệm hoàn toàn mới về đồ uống "
-#~ "soda."
-
-#~ msgid "Blueberry Soda"
-#~ msgstr "Soda Việt Quất"
-
-#~ msgid ""
-#~ "Blueberries are a very popular fruit because of their delicious taste and "
-#~ "many health benefits. Blueberry soda with the sweet and sour taste of "
-#~ "blueberries, with cool soda,..."
-#~ msgstr ""
-#~ "Việt quất là một loại trái cây rất phổ biến vì hương vị ngon và nhiều lợi "
-#~ "ích cho sức khỏe. Soda việt quất với hương vị ngọt chua của việt quất, "
-#~ "kết hợp với soda mát,..."
-
-#~ msgid "Kumquat And Aloe Vera Tea"
-#~ msgstr "Trà Bưởi Và Lô Hội"
-
-#~ msgid ""
-#~ "A refreshing and nourishing beverage made from the gel extracted from the "
-#~ "aloe vera plant. It offers a range of potential health benefits."
-#~ msgstr ""
-#~ "Một thức uống mát lạnh và bổ dưỡng được làm từ gel chiết xuất từ cây lô "
-#~ "hội. Nó mang lại nhiều lợi ích cho sức khỏe tiềm năng."
-
-#~ msgid "Beef Hamburger"
-#~ msgstr "Hamburger Bò"
-
-#~ msgid ""
-#~ "The best burgers offer a combination of tastes and textures – sweet, "
-#~ "sour, salt – with a bit of crunch."
-#~ msgstr ""
-#~ "Những chiếc bánh mì kẹp thịt ngon nhất mang đến sự kết hợp giữa hương vị "
-#~ "và kết cấu – ngọt, chua, muối – với một chút giòn."
-
-#~ msgid "Chicken Hamburgers"
-#~ msgstr "Hamburger Gà"
-
-#~ msgid ""
-#~ "Chicken burgers are healthier than regular burgers. They're made with "
-#~ "lean meat and most vegetables, so they're packed with nutrients and "
-#~ "haven't got any added sugar or fat. Plus, they taste great! Second of "
-#~ "all, chicken burgers are versatile."
-#~ msgstr ""
-#~ "Bánh mì kẹp thịt gà tốt cho sức khỏe hơn bánh mì kẹp thịt thông thường. "
-#~ "Chúng được làm từ thịt nạc và hầu hết các loại rau, vì vậy chúng chứa "
-#~ "nhiều chất dinh dưỡng và không thêm đường hoặc chất béo. Thêm vào đó, "
-#~ "chúng có hương vị tuyệt vời! Thứ hai, bánh mì kẹp thịt gà rất đa dạng."
-
-#~ msgid "Bamboo Charcoal Hamburger"
-#~ msgstr "Hamburger Than Tre"
-
-#~ msgid ""
-#~ "If you can get past the shocking color, it's not bad. The black pepper in "
-#~ "the patty hits you at the first bite and complements the tangy sauce, "
-#~ "with its hint of squid ink."
-#~ msgstr ""
-#~ "Nếu bạn có thể vượt qua được màu sắc gây sốc thì cũng không tệ. Hạt tiêu "
-#~ "đen trong miếng chả sẽ cuốn hút bạn ngay từ miếng đầu tiên và hòa quyện "
-#~ "với nước sốt thơm, thoang thoảng mùi mực ống."
-
-#~ msgid "3-Layer Mixed Hamburger"
-#~ msgstr "Hamburger Thập Cẩm 3 Tầng"
-
-#~ msgid ""
-#~ "The 3-layer mixed hamburger is a combination of beef, chicken and shrimp "
-#~ "hamburgers, with each layer having 1 filling, that combination creates an "
-#~ "unforgettable hamburger flavor."
-#~ msgstr ""
-#~ "Hamburger thập cẩm 3 tầng là sự kết hợp giữa hamburger bò, gà và tôm, mỗi "
-#~ "lớp có 1 nhân, sự kết hợp đó tạo nên hương vị hamburger khó quên."
-
-#~ msgid "Shrimp Hamburger"
-#~ msgstr "Hamburger Tôm"
-
-#~ msgid ""
-#~ "Shrimp burgers are also just inherently delicious, with a springy texture "
-#~ "that bursts with mildly sweet, irresistible umami flavor."
-#~ msgstr ""
-#~ "Bánh mì kẹp thịt tôm vốn dĩ đã rất ngon, với kết cấu dẻo dai hòa cùng "
-#~ "hương vị umami ngọt nhẹ, khó cưỡng."
-
-#~ msgid "3 Person Combo"
-#~ msgstr "Combo 3 Người"
-
-#~ msgid ""
-#~ "Combo includes 2 crispy fried chicken thighs, 2 chicken pieces, 2 cans of "
-#~ "Pepsi, and 2 apple pies - special dish only available when purchasing "
-#~ "combo."
-#~ msgstr ""
-#~ "Combo gồm 2 đùi gà chiên giòn, 2 miếng gà, 2 lon Pepsi và 2 bánh táo - "
-#~ "món ăn đặc biệt chỉ có khi mua combo."
-
-#~ msgid "6 Delicious Fried Chicken highs Combo"
-#~ msgstr "Combo 6 đùi gà chiên thơm ngon"
-
-#~ msgid "Combo includes 6 delicious fried chicken thighs"
-#~ msgstr "Combo gồm 6 đùi gà chiên thơm ngon"
-
-#~ msgid "Hamburger Fried Chicken Combo"
-#~ msgstr "Combo Hamburger Gà Chiên"
-
-#~ msgid ""
-#~ "Combo includes 1 delicious fried chicken thigh, 1 can of Pepsi and 1 "
-#~ "chicken/beef/shrimp hamburger."
-#~ msgstr ""
-#~ "Combo bao gồm 1 đùi gà rán thơm ngon, 1 lon Pepsi và 1 hamburger gà/bò/"
-#~ "tôm."
-
-#~ msgid "Combo For 1 Person"
-#~ msgstr "Combo 1 Người"
-
-#~ msgid ""
-#~ "combo for 1 person, combo includes 1 chicken thigh, 1 piece of fried "
-#~ "chicken, 1 can of Pepsi, and 2 apple pies - special dish only available "
-#~ "when purchasing combo"
-#~ msgstr ""
-#~ "Combo dành cho 1 người, combo gồm 1 đùi gà, 1 miếng gà rán, 1 lon Pepsi "
-#~ "và 2 bánh táo - món ăn đặc biệt chỉ có khi mua combo"
-
-#~ msgid "Super Ultra Big Flat Winnowing Basket"
-#~ msgstr "Mẹt Khổng Lồ"
-
-#~ msgid ""
-#~ "Including dishes such as fish balls, sausages, shrimp balls, lap mill,..."
-#~ msgstr "Gồm các món như cá viên, xúc xích, tôm viên, lạp xưởng,..."
-
-#~ msgid "HyNiu Super Ultra Combo"
-#~ msgstr "Combo Siêu Siêu HyNiu"
-
-#~ msgid ""
-#~ "Exclusive combo dishes researched and created by our restaurant, we "
-#~ "guarantee you will have an unforgettable experience with unique but "
-#~ "delicious flavors."
-#~ msgstr ""
-#~ "Các món combo độc quyền được nghiên cứu và sáng tạo bởi nhà hàng chúng "
-#~ "tôi, chúng tôi đảm bảo bạn sẽ có những trải nghiệm khó quên với hương vị "
-#~ "độc đáo nhưng thơm ngon."
-
-#~ msgid "Accepted-Ongoing"
-#~ msgstr "Shop đã nhận đơn"
+msgid "Your order has been paid!"
+msgstr "Đơn hàng của bạn đã được thanh toán!"
+
+msgid "Order Date:"
+msgstr "Thời Gian Đặt: "
+
+msgid "User's Status:"
+msgstr "Trạng Thái Đơn Hàng: "
+
+msgid "Parent"
+msgstr "Nhánh Cha"
+
+msgid "Phone"
+msgstr "SĐT"
+
+msgid "Address"
+msgstr "Địa Chỉ"
+
+msgid "Milk Tea"
+msgstr "Trà Sữa"
+
+msgid "Snack"
+msgstr "Đồ Ăn Nhẹ"
+
+msgid "Soda"
+msgstr "Nước Ngọt"
+
+msgid "Coffee"
+msgstr "Cà phê"
+
+msgid "Fried Chicken"
+msgstr "Gà Rán"
+
+msgid "White coffee"
+msgstr "Bạc Xỉu"
+
+msgid ""
+"white coffee is used to refer to regular black coffee that has had milk, "
+"cream or some other whitener added to it"
+msgstr ""
+"Bạc Xỉu được dùng để chỉ cà phê đen thông thường được thêm sữa, kem vào "
+"để tăng vị ngon, thơm ngậy."
+
+msgid "Black Coffee"
+msgstr "Cà phê đen"
+
+msgid "Coffee served as a beverage without cream or milk."
+msgstr "Cà phê được phục vụ như nguyên bản, không có kem hoặc sữa."
+
+msgid "Egg coffee"
+msgstr "Cà phê trứng"
+
+msgid ""
+"An egg coffee is a Vietnamese drink traditionally prepared with egg "
+"yolks, sugar, condensed milk and robusta coffee."
+msgstr ""
+"Cà phê trứng là thức uống truyền thống của người Việt được pha chế với "
+"lòng đỏ trứng, đường, sữa đặc và cà phê Robusta."
+
+msgid "Capuchino"
+msgstr "Capuchino"
+
+msgid ""
+"Variations of the drink involve the use of cream instead of milk, using "
+"non-dairy milk substitutes and flavoring with cinnamon (in the United "
+"States) or chocolate powder (in Europe)."
+msgstr ""
+"Các biến thể của đồ uống liên quan đến việc sử dụng kem thay vì sữa, sử "
+"dụng các sản phẩm thay thế sữa không phải sữa và hương liệu với quế (ở "
+"Hoa Kỳ) hoặc bột sô cô la (ở Châu Âu)."
+
+msgid "Latte"
+msgstr "Latte"
+
+msgid ""
+"A coffee drink of Italian origin made with espresso and steamed milk. "
+"Variants include the chocolate-flavored mocha or replacing the coffee "
+"with another beverage base such as masala chai (spiced Indian tea), mate, "
+"matcha, turmeric or rooibos."
+msgstr ""
+"Một thức uống cà phê có nguồn gốc từ Ý được pha bằng espresso và sữa hấp. "
+"Các biến thể bao gồm mocha có hương vị sô cô la hoặc thay thế cà phê bằng "
+"một loại đồ uống khác như masala chai (trà gia vị Ấn Độ), mate, matcha, "
+"nghệ hoặc rooibos."
+
+msgid "Mushroom Chicken Pizza"
+msgstr "Pizza Gà Nấm"
+
+msgid ""
+"Delicious pizza with roasted chicken, mushrooms, spinach, and homemade "
+"kale pesto sauce. An easy, fun, and healthful pizza!"
+msgstr ""
+"Bánh pizza thơm ngon với thịt gà nướng, nấm, rau bina và sốt pesto cải "
+"xoăn tự làm. Một chiếc bánh pizza dễ dàng, thú vị và tốt cho sức khỏe!"
+
+msgid "Seafood Pizza"
+msgstr "Pizza Hải Sản"
+
+msgid ""
+"Seafood pizza is pizza prepared with seafood as a primary ingredient."
+msgstr ""
+"Pizza hải sản là một loại pizza được làm với hải sản là thành phần chính."
+
+msgid "Veggie Pizza"
+msgstr "Pizza Rau Củ"
+
+msgid ""
+"This veggie pizza is made from crescent-roll dough and a cream cheesy "
+"spread for an easy, fresh take on a favorite-packed with crunchy"
+msgstr ""
+"Pizza rau củ này được làm từ bột láng và một lớp kem phô mai mịn màng để "
+"tạo ra một phiên bản mới dễ làm, tươi mát của món ăn ưa thích-đậy ắp vị "
+"giòn."
+
+msgid "Mixed Pizza"
+msgstr "Pizza Thập Cẩm"
+
+msgid ""
+"Mixed pizza is a type of pizza that combines ingredients from many other "
+"types of pizza such as seafood, vegetables, chicken, sausage..."
+msgstr ""
+"Pizza thập cẩm là một loại pizza kết hợp các thành phần từ nhiều loại "
+"pizza khác nhau như hải sản, rau cải, gà, xúc xích..."
+
+msgid "Sausage Pizza"
+msgstr "Pizza Xúc Xích"
+
+msgid ""
+"Sausage pizza with the main ingredient being delicious sausages covered "
+"with fatty cheese and a crispy crust."
+msgstr ""
+"Pizza xúc xích với thành phần chính là xúc xích thơm ngon được phủ bởi "
+"lớp phô mai béo và lớp vỏ giòn."
+
+msgid "Fried Chicken Wings"
+msgstr "Cánh Gà Chiên"
+
+msgid ""
+"Crispy fried chicken wings with HyNiu's special recipe makes the chicken "
+"wings delicious and crispy"
+msgstr ""
+"Cánh gà chiên giòn với công thức đặc biệt của HyNiu tạo nên hương vị ngon "
+"và giòn."
+
+msgid "Fried Chicken Thighs"
+msgstr "Đùi Gà Chiên"
+
+msgid ""
+"Crispy fried chicken thighs with HyNiu's special recipe helps make the "
+"chicken wings delicious and crispy"
+msgstr ""
+"Đùi gà chiên giòn với công thức đặc biệt của HyNiu giúp đùi gà ngon và "
+"giòn."
+
+msgid "Hyniu's Sauce Fried Chicken"
+msgstr "Cánh Gà Chiên Sốt Hyniu"
+
+msgid ""
+"Crispy fried chicken with exclusive Hyniu sauce, sweet and spicy flavor, "
+"our formula has been researched for 5 years to perfect, giving you a "
+"wonderful experience."
+msgstr ""
+"Cánh gà chiên giòn với sốt Hyniu độc đáo, hương vị ngọt và cay, công thức "
+"của chúng tôi đã được nghiên cứu trong 5 năm để hoàn thiện, mang đến cho "
+"bạn trải nghiệm tuyệt vời."
+
+msgid "Chicken Pieces"
+msgstr "Gà Miếng"
+
+msgid ""
+"Never get tired of eating our crispy fried chicken breast, with HyNiu "
+"restaurant's exclusive recipe and method."
+msgstr ""
+"Không bao giờ chán khi ăn miếng gà chiên giòn của chúng tôi, với công "
+"thức và phương pháp độc quyền của nhà hàng HyNiu."
+
+msgid "Cheese Chicken"
+msgstr "Gà Phô Mai"
+
+msgid ""
+"Crispy fried chicken pieces combined with cheese sauce create a unique "
+"yet appealing flavor"
+msgstr ""
+"Miếng gà chiên giòn kết hợp với sốt phô mai tạo nên hương vị độc đáo "
+"nhưng hấp dẫn."
+
+msgid "Sunflower Seed"
+msgstr "Hạt Hướng Dương"
+
+msgid ""
+"Sunflower seeds are a source of many vitamins and minerals that can "
+"support your immune system and increase your ability to fight off viruses."
+msgstr ""
+"Hạt hướng dương là nguồn cung cấp nhiều loại vitamin và khoáng chất có "
+"thể hỗ trợ hệ miễn dịch và tăng khả năng chống lại vi khuẩn."
+
+msgid "Coconut Flavored Sunflower Seeds"
+msgstr "Hạt Hướng Dương Vị Dừa"
+
+msgid "Sunflower seeds combine delicious coconut flavor"
+msgstr "Hạt hướng dương kết hợp với hương vị dừa thơm ngon."
+
+msgid "Chicken Feet With Super Spicy Thai Sauce"
+msgstr "Chân Gà Sốt Thái Cực Cay"
+
+msgid ""
+"Chicken feet in Thai sauce is a super delicious snack with the sour, "
+"spicy taste of the sauce mixed with deliciously crispy chicken feet."
+msgstr ""
+"Chân gà sốt Thái là món ăn nhẹ ngon tuyệt vời với hương vị chua cay của "
+"sốt hòa quyện với chân gà giòn thơm."
+
+msgid "French Fries"
+msgstr "Khoai Tây Chiên"
+
+msgid ""
+"Prepared by cutting potatoes into even strips, drying them and frying "
+"them in a deep fryer."
+msgstr ""
+"Chuẩn bị bằng cách cắt khoai tây thành từng thanh đều, sấy khô và chiên "
+"trong nồi chảo sâu."
+
+msgid "Chinese Sausage"
+msgstr "Lạp Xưởng"
+
+msgid ""
+"The southern flavor of Chinese sausage is commonly known by its Cantonese "
+"name lap cheong."
+msgstr ""
+"Hương vị phương Nam của lạp xưởng Trung Quốc thường được biết đến bằng "
+"tên gọi tiếng Quảng Đông là 'lạp xưởng'."
+
+msgid "Fried Squid"
+msgstr "Mực Chiên Giòn"
+
+msgid ""
+"Fried calamari is one of the most classic appetizers made of lightly "
+"battered rings of squid quickly fried and served with a marinara sauce."
+msgstr ""
+"Mực chiên giòn là một trong những món khai vị cổ điển nhất, được làm từ "
+"những vòng mực bọc bột nhẹ, nhanh chóng chiên và thường được phục vụ kèm "
+"sốt marinara."
+
+msgid "Lumpia Goreng"
+msgstr "Chả Giò Indo"
+
+msgid ""
+"Lumpia goreng is a simple Indonesian fried spring roll filled with "
+"vegetables. The spring roll wrappers are filled with chopped, matchstick-"
+"sized carrots, shredded cabbage, and sometimes mushrooms."
+msgstr ""
+"Chả giò Indonesia là một loại bánh quyện chiên ngon và đơn giản, được làm "
+"từ bánh tráng cuốn và nhân bên trong bao gồm cà rốt băm nhỏ, cải bắp băm "
+"mỏng và đôi khi còn có nấm."
+
+msgid "Sausage"
+msgstr "Lạp Xưởng"
+
+msgid ""
+"A sausage is a type of meat product usually made from ground meat-often "
+"pork, beef, or poultry-along with salt, spices and other flavourings."
+msgstr ""
+"Lạp xưởng là một loại sản phẩm từ thịt thường được làm từ thịt băm - "
+"thường là thịt lợn, bò hoặc gia cầm - kèm theo muối, gia vị và các hương "
+"liệu khác."
+
+msgid "Black Sugar Pearl Milk Tea"
+msgstr "Trà Sữa Chân Trâu Đường Đen"
+
+msgid ""
+"This drink is made from 3 ingredients, tapioca pearls, caramelised brown "
+"sugar and milk. It is the favorite drink of today's youth."
+msgstr ""
+"Đồ uống này được làm từ 3 thành phần: ngọc trai sắn, đường đen caramel và "
+"sữa. Đây là thức uống yêu thích của giới trẻ ngày nay."
+
+msgid "Melon Milk Tea"
+msgstr "Trà Sữa Dưa Lưới"
+
+msgid ""
+"Melon milk tea is a combination of the aromatic flavor of milk and the "
+"freshness of melon, bringing a wonderful experience."
+msgstr ""
+"Trà sữa dưa lưới là sự kết hợp giữa hương vị thơm ngon của sữa và sự tươi "
+"mát của dưa lưới, mang đến một trải nghiệm tuyệt vời."
+
+msgid "Golden Milk Tea"
+msgstr "Trà Sữa Hoàng Kim"
+
+msgid ""
+"As one of the hot topping dishes today, milk tea with golden pearls, in "
+"addition to its irresistible delicious taste, also brings a sense of "
+"elegance and beauty."
+msgstr ""
+"Là một trong những món trà sữa phổ biến ngày nay, trà sữa với chân trâu "
+"hoàng kim, ngoài hương vị ngon khó cưỡng, còn mang lại một cảm giác thanh "
+"lịch và đẹp mắt."
+
+msgid "HyNiu Milk Tea"
+msgstr "Trà Sữa HyNiu"
+
+msgid ""
+"HyNiu milk tea is one of the restaurant's most passionate dishes, with a "
+"secret combination of ingredients that has been thoroughly researched and "
+"tested, this drink brings a wonderful experience to both taste and sight."
+msgstr ""
+"Trà sữa HyNiu là một trong những món ăn đặc biệt của nhà hàng, với sự kết "
+"hợp bí mật của các thành phần đã được nghiên cứu và thử nghiệm kỹ lưỡng, "
+"đồ uống này mang lại một trải nghiệm tuyệt vời cả về hương vị và thị giác."
+
+msgid "Green Apple Milk Tea"
+msgstr "Trà Sữa Táo Xanh"
+
+msgid ""
+"Our Green Apple Green Tea tastes like a luscious apple with hints of "
+"caramel. Luxury Ingredients: Green tea, Apple pieces, Tamarind leaves, "
+"Natural flavors. Made with all natural flavorings."
+msgstr ""
+"Trà sữa táo xanh của chúng tôi có hương vị giống như táo ngon với gợi ý "
+"của karamen. Thành phần xa xỉ: Trà xanh, miếng táo, lá me, hương liệu tự "
+"nhiên. Được làm với tất cả hương liệu tự nhiên."
+
+msgid "Chocolate Milk Tea"
+msgstr "Trà sữa Sô Cô La"
+
+msgid ""
+"Rich in cocoa flavor with a taste of black tea, this makes it an ultimate "
+"comfort drink for customers."
+msgstr ""
+"Với hương vị cacao đậm đà kết hợp với hương vị trà đen, đây là thức uống "
+"thúc đẩy sự thoải mái tối ưu cho khách hàng."
+
+msgid "Pepsi"
+msgstr "Pepsi"
+
+msgid ""
+"Pepsi is a popular carbonated beverage that many people eat every time."
+msgstr "Pepsi là một thức uống có ga phổ biến mà nhiều người thích."
+
+msgid "Lemon Soda"
+msgstr "Soda Chanh"
+
+msgid ""
+"This Lemon Soda has three basic ingredients and is the perfect balance of "
+"sweet, tart, and bubbly. It has the perfect level of sweetness, allowing "
+"the lemon flavor to shine through. If you love lemon or citrus drinks "
+"then you'll love this soda."
+msgstr ""
+"Soda chanh này có ba thành phần cơ bản và là sự kết hợp hoàn hảo giữa "
+"hương vị ngọt ngào, chua chát và sủi bọt. Nó có độ ngọt hoàn hảo, cho "
+"phép hương vị chanh tỏa sáng. Nếu bạn yêu thích đồ uống chanh hoặc có "
+"hương vị chanh, thì bạn sẽ thích soda này."
+
+msgid "Mint Soda"
+msgstr "Soda Bạc Hà"
+
+msgid ""
+"With its refreshing and fragrant flavor, mint is a welcome addition to "
+"both sweet and savory dishes."
+msgstr ""
+"Với hương vị tươi mát và thơm ngon, bạc hà là một sự bổ sung đáng chào "
+"đón cho cả món ngọt và món mặn."
+
+msgid "Strawberry Soda"
+msgstr "Soda Dâu"
+
+msgid ""
+"It's delicious in its own unique way! If a soda could taste “fresh”, this "
+"would be it."
+msgstr ""
+"Nó ngon theo cách độc đáo của riêng nó! Nếu soda có thể có hương vị 'tươi "
+"mát', thì đây chính là loại soda đó."
+
+msgid "Galaxy HyNiu"
+msgstr "Galaxy HyNiu"
+
+msgid ""
+"Cool soda with exclusive HyNiu flavor, we believe this drink will give "
+"you a completely new experience of soda drinks."
+msgstr ""
+"Soda mát lạnh với hương vị độc quyền của HyNiu, chúng tôi tin rằng đồ "
+"uống này sẽ mang lại cho bạn một trải nghiệm hoàn toàn mới về đồ uống "
+"soda."
+
+msgid "Blueberry Soda"
+msgstr "Soda Việt Quất"
+
+msgid ""
+"Blueberries are a very popular fruit because of their delicious taste and "
+"many health benefits. Blueberry soda with the sweet and sour taste of "
+"blueberries, with cool soda,..."
+msgstr ""
+"Việt quất là một loại trái cây rất phổ biến vì hương vị ngon và nhiều lợi "
+"ích cho sức khỏe. Soda việt quất với hương vị ngọt chua của việt quất, "
+"kết hợp với soda mát,..."
+
+msgid "Kumquat And Aloe Vera Tea"
+msgstr "Trà Bưởi Và Lô Hội"
+
+msgid ""
+"A refreshing and nourishing beverage made from the gel extracted from the "
+"aloe vera plant. It offers a range of potential health benefits."
+msgstr ""
+"Một thức uống mát lạnh và bổ dưỡng được làm từ gel chiết xuất từ cây lô "
+"hội. Nó mang lại nhiều lợi ích cho sức khỏe tiềm năng."
+
+msgid "Beef Hamburger"
+msgstr "Hamburger Bò"
+
+msgid ""
+"The best burgers offer a combination of tastes and textures -sweet, "
+"sour, salt- with a bit of crunch."
+msgstr ""
+"Những chiếc bánh mì kẹp thịt ngon nhất mang đến sự kết hợp giữa hương vị "
+"và kết cấu – ngọt, chua, muối – với một chút giòn."
+
+msgid "Chicken Hamburgers"
+msgstr "Hamburger Gà"
+
+msgid ""
+"Chicken burgers are healthier than regular burgers. They're made with "
+"lean meat and most vegetables, so they're packed with nutrients and "
+"haven't got any added sugar or fat. Plus, they taste great! Second of "
+"all, chicken burgers are versatile."
+msgstr ""
+"Bánh mì kẹp thịt gà tốt cho sức khỏe hơn bánh mì kẹp thịt thông thường. "
+"Chúng được làm từ thịt nạc và hầu hết các loại rau, vì vậy chúng chứa "
+"nhiều chất dinh dưỡng và không thêm đường hoặc chất béo. Thêm vào đó, "
+"chúng có hương vị tuyệt vời! Thứ hai, bánh mì kẹp thịt gà rất đa dạng."
+
+msgid "Bamboo Charcoal Hamburger"
+msgstr "Hamburger Than Tre"
+
+msgid ""
+"If you can get past the shocking color, it's not bad. The black pepper in "
+"the patty hits you at the first bite and complements the tangy sauce, "
+"with its hint of squid ink."
+msgstr ""
+"Nếu bạn có thể vượt qua được màu sắc gây sốc thì cũng không tệ. Hạt tiêu "
+"đen trong miếng chả sẽ cuốn hút bạn ngay từ miếng đầu tiên và hòa quyện "
+"với nước sốt thơm, thoang thoảng mùi mực ống."
+
+msgid "3-Layer Mixed Hamburger"
+msgstr "Hamburger Thập Cẩm 3 Tầng"
+
+msgid ""
+"The 3-layer mixed hamburger is a combination of beef, chicken and shrimp "
+"hamburgers, with each layer having 1 filling, that combination creates an "
+"unforgettable hamburger flavor."
+msgstr ""
+"Hamburger thập cẩm 3 tầng là sự kết hợp giữa hamburger bò, gà và tôm, mỗi "
+"lớp có 1 nhân, sự kết hợp đó tạo nên hương vị hamburger khó quên."
+
+msgid "Shrimp Hamburger"
+msgstr "Hamburger Tôm"
+
+msgid ""
+"Shrimp burgers are also just inherently delicious, with a springy texture "
+"that bursts with mildly sweet, irresistible umami flavor."
+msgstr ""
+"Bánh mì kẹp thịt tôm vốn dĩ đã rất ngon, với kết cấu dẻo dai hòa cùng "
+"hương vị umami ngọt nhẹ, khó cưỡng."
+
+msgid "3 Person Combo"
+msgstr "Combo 3 Người"
+
+msgid ""
+"Combo includes 2 crispy fried chicken thighs, 2 chicken pieces, 2 cans of "
+"Pepsi, and 2 apple pies - special dish only available when purchasing "
+"combo."
+msgstr ""
+"Combo gồm 2 đùi gà chiên giòn, 2 miếng gà, 2 lon Pepsi và 2 bánh táo - "
+"món ăn đặc biệt chỉ có khi mua combo."
+
+msgid "6 Delicious Fried Chicken highs Combo"
+msgstr "Combo 6 đùi gà chiên thơm ngon"
+
+msgid "Combo includes 6 delicious fried chicken thighs"
+msgstr "Combo gồm 6 đùi gà chiên thơm ngon"
+
+msgid "Hamburger Fried Chicken Combo"
+msgstr "Combo Hamburger Gà Chiên"
+
+msgid ""
+"Combo includes 1 delicious fried chicken thigh, 1 can of Pepsi and 1 "
+"chicken/beef/shrimp hamburger."
+msgstr ""
+"Combo bao gồm 1 đùi gà rán thơm ngon, 1 lon Pepsi và 1 hamburger gà/bò/"
+"tôm."
+
+msgid "Combo For 1 Person"
+msgstr "Combo 1 Người"
+
+msgid ""
+"combo for 1 person, combo includes 1 chicken thigh, 1 piece of fried "
+"chicken, 1 can of Pepsi, and 2 apple pies - special dish only available "
+"when purchasing combo"
+msgstr ""
+"Combo dành cho 1 người, combo gồm 1 đùi gà, 1 miếng gà rán, 1 lon Pepsi "
+"và 2 bánh táo - món ăn đặc biệt chỉ có khi mua combo"
+
+msgid "Super Ultra Big Flat Winnowing Basket"
+msgstr "Mẹt Khổng Lồ"
+
+msgid ""
+"Including dishes such as fish balls, sausages, shrimp balls, lap mill,..."
+msgstr "Gồm các món như cá viên, xúc xích, tôm viên, lạp xưởng,..."
+
+msgid "HyNiu Super Ultra Combo"
+msgstr "Combo Siêu Siêu HyNiu"
+
+msgid ""
+"Exclusive combo dishes researched and created by our restaurant, we "
+"guarantee you will have an unforgettable experience with unique but "
+"delicious flavors."
+msgstr ""
+"Các món combo độc quyền được nghiên cứu và sáng tạo bởi nhà hàng chúng "
+"tôi, chúng tôi đảm bảo bạn sẽ có những trải nghiệm khó quên với hương vị "
+"độc đáo nhưng thơm ngon."
+
+msgid "Accepted-Ongoing"
+msgstr "Shop đã nhận đơn"

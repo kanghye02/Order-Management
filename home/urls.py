@@ -50,4 +50,8 @@ urlpatterns = [
     path('admin/users/create/', views.admin_user_create, name='admin_user_create'),
     #URL cho thống kê
     path('admin/statistics/', views.Statistics.as_view(), name='admin_statistics'),  
+    #URL cho mã QR
+    path('table/<int:table_number>/', views.table_view, name='table_view'),
+    path('login_qr/', views.login_from_qr, name='login_from_qr'),
+    path('check_qr_status/<int:table_number>/', views.check_qr_status, name='check_qr_status'),
 ]

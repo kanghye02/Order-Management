@@ -6,6 +6,7 @@
 <head>
   <!-- Basic -->
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=0.35">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <link rel="shortcut icon" href="{% static 'homepage/images/favicon.png' %}" type="">
   <title> HyNiu Food & Drink </title>
@@ -39,14 +40,14 @@
               HyNiu F&D
             </span>
           </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class=""> </span>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="collapse navbar-collapse" id="navbarContent">
             <ul class="navbar-nav  mx-auto ">
               <li class="listlink"><a href="{% url 'home:home' %}"> {% trans "HOME" %}</a> </li>
-              <li class="listlink"><a href="{% url 'home:category' %}">&emsp; &emsp; &emsp;  &emsp; {% trans "MENU" %}</a></li>
-              <li class="listlink"><a href="">&emsp; &emsp; &emsp;  &emsp; {% trans "ABOUT" %}</a></li>
+              <li class="listlink"><a href="{% url 'home:category' %}"> &emsp;  &emsp; {% trans "MENU" %}</a></li>
+              <li class="listlink"><a href="">&emsp;  &emsp; {% trans "ABOUT" %}</a></li>
             </ul>
             {% get_current_language as LANGUAGE_CODE %}
             {% get_available_languages as LANGUAGES %}

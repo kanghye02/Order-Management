@@ -99,3 +99,12 @@ class Review(models.Model):
 
     def __str__(self):
         return f"Review by {self.user.username} for {self.product.name}"
+
+class QRCode(models.Model):
+    table_number = models.IntegerField(unique=True)
+    qr_code_data = models.TextField()  # Lưu dữ liệu mã QR dưới dạng base64
+    is_active = models.BooleanField(default=True)  # Trạng thái của mã QR
+
+    def __str__(self):
+        return f"Table {self.table_number} - {'Active' if self.is_active else 'Inactive'}"
+

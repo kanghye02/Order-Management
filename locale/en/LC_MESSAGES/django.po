@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-17 23:24+0700\n"
+"POT-Creation-Date: 2023-12-18 22:12+0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -90,24 +90,24 @@ msgstr ""
 msgid "Brief description of the promotion."
 msgstr ""
 
-#: .\home\views.py:76 .\home\views.py:221 .\home\views.py:288
-#: .\home\views.py:440
+#: .\home\views.py:80 .\home\views.py:225 .\home\views.py:292
+#: .\home\views.py:444
 msgid "Changes saved"
 msgstr ""
 
-#: .\home\views.py:489 .\home\views.py:499 .\home\views.py:512
+#: .\home\views.py:493 .\home\views.py:503 .\home\views.py:516
 msgid "Đơn đặt hàng không tồn tại"
 msgstr ""
 
-#: .\home\views.py:509
+#: .\home\views.py:513
 msgid "Không thể xóa đơn đặt hàng với trạng thái này"
 msgstr ""
 
-#: .\shop\settings.py:121
+#: .\shop\settings.py:124
 msgid "VI"
 msgstr ""
 
-#: .\shop\settings.py:122
+#: .\shop\settings.py:125
 msgid "EN"
 msgstr ""
 

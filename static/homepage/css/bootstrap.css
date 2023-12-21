@@ -4279,7 +4279,7 @@ input[type="button"].btn-block {
     flex-basis: auto;
   }
   .navbar-expand-sm .navbar-toggler {
-    display: none;
+    display: block;
   }
 }
 
@@ -4321,7 +4321,7 @@ input[type="button"].btn-block {
     flex-basis: auto;
   }
   .navbar-expand-md .navbar-toggler {
-    display: none;
+    display: block;
   }
 }
 
@@ -4363,7 +4363,7 @@ input[type="button"].btn-block {
     flex-basis: auto;
   }
   .navbar-expand-lg .navbar-toggler {
-    display: none;
+    display: block;
   }
 }
 
@@ -4405,7 +4405,7 @@ input[type="button"].btn-block {
     flex-basis: auto;
   }
   .navbar-expand-xl .navbar-toggler {
-    display: none;
+    display: block;
   }
 }
 
@@ -4450,7 +4450,7 @@ input[type="button"].btn-block {
 }
 
 .navbar-expand .navbar-toggler {
-  display: none;
+  display: block;
 }
 
 .navbar-light .navbar-brand {
