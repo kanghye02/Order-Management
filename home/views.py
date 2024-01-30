@@ -445,7 +445,7 @@ def delete_users(request):
             return redirect('home:admin_user_list')
     else:
         form = DeleteCustomUserForm()
-    users = User.objects.all()
+    users = CustomUser.objects.all()
     return render(request, 'user_list.html', {'users': users, 'form': form})
 
 @staff_member_required
@@ -582,17 +582,35 @@ class Statistics(ListView):
 
 
 @login_required
-def pay_order(request, order_id):
-    user = request.user
-    order = get_object_or_404(Order, user=user, id=order_id, status__lt=2)
-    if order.status<2 :
+def pay_all_orders(request):
+    orders_to_pay = Order.objects.all()
+    # Biến cờ để đánh dấu nếu có đơn hàng không hợp lệ
+    invalid_order_flag = False
+
+    # Duyệt qua từng đơn hàng để thực hiện thanh toán
+    for order in orders_to_pay:
+        if order.status == 0:
+            invalid_order_flag = True
+            break  # Nếu có ít nhất một đơn hàng không hợp lệ, dừng vòng lặp
+
         order.status = 4
-        order_detail=OrderDetail.objects.filter(order=order)
-        for sold_product in order_detail:
+        order_details = OrderDetail.objects.filter(order=order)
+
+        # Cập nhật số lượng sản phẩm đã bán cho từng sản phẩm trong đơn hàng
+        for sold_product in order_details:
             sold_product.product.sold_number += sold_product.quantity
             sold_product.product.save()
+
         order.save()
-        return redirect('/yourorder/')
+
+    # Kiểm tra xem tất cả đơn hàng đã được thanh toán thành công
+    if not invalid_order_flag:
+        # Thực hiện xoá tài khoản người dùng
+        user = request.user
+        user.delete()
+        return render(request, 'getout.html')
+
+    return redirect('/yourorder/')
 
 
 @staff_member_required
@@ -729,13 +747,21 @@ def login_from_qr(request):
     username = f"Table_{table_number}"
     password = "Huy2002@"  # Thay thế với cách lấy password an toàn hơn nếu cần
     user = authenticate(request, username=username, password=password)
+
+    # Nếu người dùng không tồn tại, tạo mới và đăng nhập
+    if user is None:
+        # Tạo một người dùng mới với tên là username và mật khẩu là password
+        user = CustomUser.objects.create_user(username=username, password=password)
+        # Bạn có thể thêm các thông tin khác của người dùng nếu cần
+        user.save()
+
+    # Đăng nhập người dùng
+    login(request, user)
+
+    # Tạo hoặc cập nhật mã QR và đánh dấu là không active
     create_or_update_qr_code(table_number, is_active=False)
-    if user is not None:
-        login(request, user)
-        return redirect('home:category')  # Chuyển hướng về trang chủ
-    else:
-        # Xử lý trường hợp không đăng nhập được
-        return redirect('login')  # Chuyển hướng đến trang đăng nhập
+
+    return redirect('home:category')  # Chuyển hướng về trang chủ
 
 def check_qr_status(request, table_number):
     try:

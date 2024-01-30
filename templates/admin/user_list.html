@@ -12,10 +12,12 @@
         <table class="tablecate">
         <tbody>
             {% for user in users %}
+            {% if user.username != "admin" %}
             <tr>
                 <td class="checkbox-column" ><input type="checkbox" name="user_ids" value="{{ user.id }}"></td>
                 <td class="tdcate"><a href="{% url 'home:admin_user_detail' user.id %}">{{user.username}}</a></td>
             </tr>
+            {% endif %}
             {% endfor %}
         </tbody>
         </table>

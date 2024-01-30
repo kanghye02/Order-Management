@@ -43,6 +43,12 @@
                 <a href="?status=completed">{%trans "Completed" %}</a>
             </div>
         </span>
+        {% if messages %}
+            {% for message in messages %}
+              <p class="text-success text-center">{{ message }}</p>
+            {% endfor %}
+        {% endif %}
+
         {% for orderAll in orderAllItem %}
             {% if request.GET.status == 'all' or orderAll.order.get_status_display|lower == request.GET.status|lower %}
             <div class="order-details">
@@ -67,15 +73,13 @@
                     <span class="cus-right" data-total-price="{{ orderAll.total_price }}">{%trans "Total Cost" %}: {% money_localize orderAll.total_price 'VND' %}</span>
                 </div>
 
-                {% if orderAll.order.status == 1 %}
-                <div class="pay-btn">
-                    <a href="{% url 'home:pay_order' orderAll.order.id %}" class="btn btn-success">{% trans "Pay" %}</a>  
-                </div>
-                {% endif %}
-
             </div>
             {% endif %}
         {% endfor %}
+        <form action="{% url 'home:pay_all_orders' %}" method="post">
+            {% csrf_token %}
+            <button type="submit" class="red-button">Thanh toán tất cả các đơn hàng</button>
+        </form>        
     </div>
 </div>
 {% endblock %}
