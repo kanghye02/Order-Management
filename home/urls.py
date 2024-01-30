@@ -21,7 +21,7 @@ urlpatterns = [
     path('accounts/login/', LoginView.as_view(), name='login'),
     path('profile/', views.update_profile, name='profile'),
     path('cancelled_order/<int:order_id>', views.cancelled_order, name='cancelled_order'),
-    path('pay_order/<int:order_id>', views.pay_order, name='pay_order'),
+    path('pay-all-orders/', views.pay_all_orders, name='pay_all_orders'),
     path('custom_logout/', views.custom_logout, name='custom_logout'),
     path('register/', views.register, name='register'),
     # URL cho quản lý đơn hàng

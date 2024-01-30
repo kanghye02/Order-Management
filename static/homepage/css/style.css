@@ -1125,3 +1125,14 @@ table.table td, table.table th {
   width:60px;
   text-align: center;
 }
+
+.red-button {
+  background-color: red ; /* Màu đỏ */
+  color: black; /* Màu chữ trắng */
+  padding: 10px 20px; /* Kích thước nút */
+  border: none; /* Không có đường viền */
+  border-radius: 5px; /* Bo tròn góc */
+  float: right; /* Đặt ở bên phải */
+  font-size: 16px; /* Kích thước font chữ */
+  font-weight: bold; /* Font chữ đậm */
+}
