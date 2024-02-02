@@ -6,28 +6,32 @@
     <!-- Your other script tags and stylesheets go here -->
 </head>
 <body>
-<script>
-    function refreshQRStatus() {
-    var tableNumber = {{table_number}};
-    $.ajax({
-        url: '/en/check_qr_status/' + tableNumber + '/',
-        method: 'GET',
-        success: function(response) {
-            console.log("Response received:", response);  // Debug: Xem phản hồi
-            if (response.is_active === false) {
+    <script>
+        function refreshQRStatus() {
+            var tableNumber = {{table_number}};
+            $.ajax({
+                url: '/en/check_qr_status/' + tableNumber + '/',
+                method: 'GET',
+                success: function(response) {
+                    console.log("Response received:", response);  // Debug: Xem phản hồi
+                    if (response.is_active === true) {
+                        $('img.qr-code').addClass('active-qr').removeClass('inactive-qr');
+                        $('#qrStatus').html('Đã có khách hàng');
+                    } else {
+                        $('img.qr-code').addClass('inactive-qr').removeClass('active-qr');
+                        $('#qrStatus').html('Chưa có khách hàng');
+                    }
+                },
+                error: function() {
+                    // Xử lý khi không tìm thấy tài khoản
                     $('img.qr-code').addClass('inactive-qr').removeClass('active-qr');
-                    $('#qrStatus').html('Đã có khách hàng'); // Change the text
-            } else {
-                    $('img.qr-code').addClass('active-qr').removeClass('inactive-qr');
-                    $('#qrStatus').html('Chưa có khách hàng'); // Set back to the original text
-            }
-        }
+                    $('#qrStatus').html('Chưa có khách hàng');
+                }
             });
-    } 
-
-    var refreshInterval = setInterval(refreshQRStatus, 5000);
-
-</script>
+        } 
+    
+        var refreshInterval = setInterval(refreshQRStatus, 5000);
+    </script>
 <style>
     .active-qr {
         /* Màu mặc định cho mã QR hoạt động */

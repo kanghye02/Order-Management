@@ -26,7 +26,7 @@ from django.db.models.functions import TruncDate, Trunc
 from django.db.models import Sum, Count
 from .models import Product, Review
 from .forms import ReviewForm
-
+from django.contrib.auth import get_user_model
 class HomeView(View):
     def get(self, request):
         return render(request, 'homepage/index.html')
@@ -765,7 +765,7 @@ def login_from_qr(request):
 
 def check_qr_status(request, table_number):
     try:
-        qr_code = QRCode.objects.get(table_number=table_number)
-        return JsonResponse({'is_active': qr_code.is_active})
-    except QRCode.DoesNotExist:
+        CustomUser = get_user_model().objects.get(username=f"Table_{table_number}")
+        return JsonResponse({'is_active': True})
+    except get_user_model().DoesNotExist:
         return JsonResponse({'is_active': False})
